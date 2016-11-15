@@ -43,12 +43,18 @@
                                 <state key="normal" title="10 New">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="reviewNew:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LrL-G3-NQE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pa3-oc-Czf">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Old">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="reviewOld:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iOc-1R-D4E"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,6 +73,13 @@
                             <constraint firstItem="BG2-VR-PFL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xOI-Fe-gAd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="oldBtn" destination="Pa3-oc-Czf" id="FOm-3i-2f9"/>
+                        <outlet property="one" destination="xwV-2E-G3l" id="TxT-0W-lFT"/>
+                        <outlet property="three" destination="rxa-Jp-K78" id="yiX-zS-9Bk"/>
+                        <outlet property="two" destination="BG2-VR-PFL" id="ehC-Ve-bJz"/>
+                        <outlet property="zero" destination="xgr-ci-aTs" id="feG-hu-gEB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -89,7 +102,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQf-cM-otK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQf-cM-otK" userLabel="One">
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="4Op-Ll-L26"/>
@@ -98,6 +111,9 @@
                                 <state key="normal" title="One">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onePressed:" destination="DW9-RY-mN3" eventType="touchUpInside" id="RcO-f2-cOF"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRb-k8-cMo">
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -108,6 +124,9 @@
                                 <state key="normal" title="Two">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="twoPressed:" destination="DW9-RY-mN3" eventType="touchUpInside" id="bC1-g7-U2f"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Gb-Py-qtP">
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -118,6 +137,9 @@
                                 <state key="normal" title="Three">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="threePressed:" destination="DW9-RY-mN3" eventType="touchUpInside" id="h4Z-gD-BeU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW9-so-e9u">
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -128,6 +150,9 @@
                                 <state key="normal" title="Flip">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="flip:" destination="DW9-RY-mN3" eventType="touchUpInside" id="hJJ-dZ-wbj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -144,6 +169,10 @@
                             <constraint firstItem="Prt-YX-frP" firstAttribute="top" secondItem="yQf-cM-otK" secondAttribute="bottom" constant="30" id="yEd-eD-iDZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="flashcard" destination="tua-S9-ePf" id="nWY-Ba-IU8"/>
+                        <outlet property="onePressed" destination="yQf-cM-otK" id="KaN-RV-Sm4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ycj-b6-fPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

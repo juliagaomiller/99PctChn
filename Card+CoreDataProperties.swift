@@ -18,8 +18,8 @@ extension Card {
 
     @NSManaged public var front: String?
     @NSManaged public var back: String?
-    @NSManaged public var rank: Int32
-    @NSManaged public var deck: Int32
+    @NSManaged public var int32rank: Int32
+    @NSManaged public var int32deck: Int32
     @NSManaged public var flipped: Bool
     @NSManaged public var lastReviewed: NSDate?
 

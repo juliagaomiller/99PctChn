@@ -7,13 +7,54 @@
 //
 
 import UIKit
+import CoreData
 
 class MenuVC: UIViewController {
-
+    
+    @IBOutlet weak var zero: UILabel!
+    @IBOutlet weak var one: UILabel!
+    @IBOutlet weak var two: UILabel!
+    @IBOutlet weak var three: UILabel!
+    @IBOutlet weak var oldBtn: UIButton!
+    
+    var zeroDeck, otherDecks = [Card]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        checkForFirstLaunch()
+        updateView()
+        
+        if otherDecks.count == 0 {
+            oldBtn.isEnabled = false
+        }
     }
+    
+    //---IBAction Functions---
 
+    @IBAction func reviewNew(_ sender: AnyObject) {
+        
+    }
+    
+    @IBAction func reviewOld(_ sender: AnyObject) {
+        
+    }
+    
+    //---Custom Functions---
+    
+    func checkForFirstLaunch(){
+        
+    }
+    
+    func updateView(){
+        
+    }
+    
+    func setUpView(){
+        
+    }
+    
+    func loadCardDataIntoDB(file: String) {
+        
+    }
 }
+
