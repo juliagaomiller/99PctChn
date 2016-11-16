@@ -11,7 +11,7 @@ import CoreData
 
 
 public class Card: NSManagedObject {
-
+    
     var rank: Int {
         get { return Int(int32rank) }
         set { int32rank = Int32(newValue) }
@@ -22,25 +22,38 @@ public class Card: NSManagedObject {
         set { int32deck = Int32(newValue) }
     }
     
-    convenience init(rank: Int, front: String, back: String, context: NSManagedObjectContext){
+    var front: [String: String] {
+        return ["chinese": chinese!]
+    }
+    var back: [String: String?] {
+        return ["translation": translation,
+                "pinyin": pinyin,
+                "example": example,
+                "exampleTranslation": exampleTranslation
+        ]
+    }
+    
+    convenience init(rank: Int, chinese: String, pinyin: String, translation: String, example: String?, exampleTranslation: String?, context: NSManagedObjectContext){
         let entity = NSEntityDescription.entity(forEntityName: "Card", in: context)!
         self.init(entity: entity, insertInto: context)
         self.rank = rank
-        self.front = front
-        self.back = back
+        self.chinese = chinese
+        self.pinyin = pinyin
+        self.translation = translation
+        self.example = example
+        self.exampleTranslation = exampleTranslation
         self.flipped = false
         self.deck = 0
         self.lastReviewed = nil
         
     }
     
-    func flip() -> String {
+    func flip() -> [String: String?] {
         if flipped {
-            return front!
+            return front
         } else {
-            return back!
+            return back
         }
     }
-    
-    
+
 }

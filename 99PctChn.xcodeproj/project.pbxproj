@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1981F8691DDCDDA100E800E6 /* 1-100.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1981F8681DDCDDA100E800E6 /* 1-100.txt */; };
 		19F5FC231DDB837500348EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5FC221DDB837500348EA2 /* AppDelegate.swift */; };
 		19F5FC281DDB837500348EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F5FC261DDB837500348EA2 /* Main.storyboard */; };
 		19F5FC2B1DDB837500348EA2 /* _9PctChn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19F5FC291DDB837500348EA2 /* _9PctChn.xcdatamodeld */; };
@@ -16,11 +17,12 @@
 		19F5FC3C1DDB83CD00348EA2 /* StudyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5FC3B1DDB83CD00348EA2 /* StudyVC.swift */; };
 		19F5FC461DDB89CA00348EA2 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5FC451DDB89CA00348EA2 /* Helper.swift */; };
 		19F5FC491DDB89F600348EA2 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5FC481DDB89F600348EA2 /* Deck.swift */; };
-		19F5FC501DDB8FB500348EA2 /* Card+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5FC4E1DDB8FB500348EA2 /* Card+CoreDataClass.swift */; };
-		19F5FC511DDB8FB500348EA2 /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5FC4F1DDB8FB500348EA2 /* Card+CoreDataProperties.swift */; };
+		19F5FC5A1DDB9D4300348EA2 /* Card+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5FC581DDB9D4300348EA2 /* Card+CoreDataClass.swift */; };
+		19F5FC5B1DDB9D4300348EA2 /* Card+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5FC591DDB9D4300348EA2 /* Card+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1981F8681DDCDDA100E800E6 /* 1-100.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1-100.txt"; sourceTree = "<group>"; };
 		19F5FC1F1DDB837500348EA2 /* 99PctChn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 99PctChn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F5FC221DDB837500348EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19F5FC271DDB837500348EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -32,8 +34,8 @@
 		19F5FC3B1DDB83CD00348EA2 /* StudyVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudyVC.swift; sourceTree = "<group>"; };
 		19F5FC451DDB89CA00348EA2 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		19F5FC481DDB89F600348EA2 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
-		19F5FC4E1DDB8FB500348EA2 /* Card+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Card+CoreDataClass.swift"; path = "../Card+CoreDataClass.swift"; sourceTree = "<group>"; };
-		19F5FC4F1DDB8FB500348EA2 /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Card+CoreDataProperties.swift"; path = "../Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		19F5FC581DDB9D4300348EA2 /* Card+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Card+CoreDataClass.swift"; path = "../Card+CoreDataClass.swift"; sourceTree = "<group>"; };
+		19F5FC591DDB9D4300348EA2 /* Card+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Card+CoreDataProperties.swift"; path = "../Card+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,8 +94,9 @@
 		19F5FC3E1DDB891C00348EA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1981F8681DDCDDA100E800E6 /* 1-100.txt */,
 				19F5FC481DDB89F600348EA2 /* Deck.swift */,
-				19F5FC4E1DDB8FB500348EA2 /* Card+CoreDataClass.swift */,
+				19F5FC581DDB9D4300348EA2 /* Card+CoreDataClass.swift */,
 				19F5FC441DDB895A00348EA2 /* Private */,
 			);
 			name = Model;
@@ -109,7 +112,7 @@
 		19F5FC441DDB895A00348EA2 /* Private */ = {
 			isa = PBXGroup;
 			children = (
-				19F5FC4F1DDB8FB500348EA2 /* Card+CoreDataProperties.swift */,
+				19F5FC591DDB9D4300348EA2 /* Card+CoreDataProperties.swift */,
 			);
 			name = Private;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			files = (
 				19F5FC301DDB837500348EA2 /* LaunchScreen.storyboard in Resources */,
 				19F5FC2D1DDB837500348EA2 /* Assets.xcassets in Resources */,
+				1981F8691DDCDDA100E800E6 /* 1-100.txt in Resources */,
 				19F5FC281DDB837500348EA2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,12 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19F5FC501DDB8FB500348EA2 /* Card+CoreDataClass.swift in Sources */,
+				19F5FC5A1DDB9D4300348EA2 /* Card+CoreDataClass.swift in Sources */,
 				19F5FC2B1DDB837500348EA2 /* _9PctChn.xcdatamodeld in Sources */,
 				19F5FC461DDB89CA00348EA2 /* Helper.swift in Sources */,
 				19F5FC231DDB837500348EA2 /* AppDelegate.swift in Sources */,
 				19F5FC491DDB89F600348EA2 /* Deck.swift in Sources */,
-				19F5FC511DDB8FB500348EA2 /* Card+CoreDataProperties.swift in Sources */,
+				19F5FC5B1DDB9D4300348EA2 /* Card+CoreDataProperties.swift in Sources */,
 				19F5FC3C1DDB83CD00348EA2 /* StudyVC.swift in Sources */,
 				19F5FC3A1DDB83BC00348EA2 /* MenuVC.swift in Sources */,
 			);
@@ -353,6 +357,7 @@
 				19F5FC361DDB837500348EA2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
