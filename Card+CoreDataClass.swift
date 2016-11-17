@@ -8,6 +8,7 @@
 
 import Foundation
 import CoreData
+import UIKit
 
 
 public class Card: NSManagedObject {
@@ -20,17 +21,6 @@ public class Card: NSManagedObject {
     var deck: Int {
         get { return Int(int32deck) }
         set { int32deck = Int32(newValue) }
-    }
-    
-    var front: [String: String] {
-        return ["chinese": chinese!]
-    }
-    var back: [String: String?] {
-        return ["translation": translation,
-                "pinyin": pinyin,
-                "example": example,
-                "exampleTranslation": exampleTranslation
-        ]
     }
     
     convenience init(rank: Int, chinese: String, pinyin: String, translation: String, example: String?, exampleTranslation: String?, context: NSManagedObjectContext){
@@ -48,12 +38,21 @@ public class Card: NSManagedObject {
         
     }
     
-    func flip() -> [String: String?] {
-        if flipped {
-            return front
-        } else {
-            return back
+    func returnColor() -> UIColor {
+        switch(self.deck) {
+        case 0:
+            return UIColor.white
+        case 1:
+        return UIColor.red
+        case 2:
+            return UIColor.yellow
+        case 3:
+            return UIColor.green
+        default:
+            print("Deck index: ", self.deck)
+            return UIColor.gray
         }
+        
     }
 
 }

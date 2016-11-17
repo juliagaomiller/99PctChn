@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "99PctChn/MenuVC.swift"
-            timestampString = "501016040.699343"
+            filePath = "99PctChn/Deck.swift"
+            timestampString = "501045593.040983"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
-            landmarkName = "updateView()"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "pickCard()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

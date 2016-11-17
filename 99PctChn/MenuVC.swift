@@ -20,8 +20,10 @@ class MenuVC: UIViewController {
     let context = delegate.persistentContainer.viewContext
     
     var allCards = [Card]()
-    var zeroDeck = [Card]()
-    var otherDecks = [Card]()
+    var zeroDeck = Deck(name: 0)
+    var otherDecks = Deck(name: nil)
+    
+    //---Override Functions---
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,17 +34,27 @@ class MenuVC: UIViewController {
         updateView()
     }
     
-    //---IBAction Functions---
-
-    @IBAction func reviewNew(_ sender: AnyObject) {
-        
-    }
-    
-    @IBAction func reviewOld(_ sender: AnyObject) {
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "NewSegue" {
+            var i = 0
+            let deck = Deck(name: 0)
+            while i < 10 {
+                deck.cards.append(zeroDeck.cards[i])
+                i += 1
+            }
+            let vc = segue.destination as! StudyVC
+            vc.deck = deck
+        } else if segue.identifier == "OldSegue" {
+            let vc = segue.destination as! StudyVC
+            vc.deck = otherDecks
+        }
     }
     
     //---Custom Functions---
+    
+    func setUpView(){
+        loadCardDataIntoDB(file: "1-100", rank: 0)
+    }
     
     func updateAllCards() {
         let request: NSFetchRequest<Card> = Card.fetchRequest()
@@ -50,6 +62,14 @@ class MenuVC: UIViewController {
             allCards = try context.fetch(request)
         } catch {
             fatalError("Failed to fetch Cards: \(error)")
+        }
+    }
+    
+    func checkForFirstLaunch(){
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        if !launchedBefore {
+            setUpView()
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
         }
     }
     
@@ -61,42 +81,32 @@ class MenuVC: UIViewController {
             switch(card.deck) {
             case 0:
                 zero += 1
-                zeroDeck.append(card)
+                zeroDeck.cards.append(card)
             case 1:
                 one += 1
-                otherDecks.append(card)
+                otherDecks.cards.append(card)
             case 2:
                 two += 1
-                otherDecks.append(card)
+                otherDecks.cards.append(card)
             case 3:
                 three += 1
-                otherDecks.append(card)
+                otherDecks.cards.append(card)
             default:
                 print("DEFAULT: \(card.deck)")
             }
         }
         
-        self.zero.text = "\(zero)"
+        zeroDeck.sortByRank()
+        
+        self.zero.text = "\(zero)/\(allCards.count)"
         self.one.text = "\(one)"
         self.two.text = "\(two)"
         self.three.text = "\(three)"
         
-        if otherDecks.count == 0 {
+        if otherDecks.cards.count == 0 {
             oldBtn.isEnabled = false
         }
         
-    }
-    
-    func checkForFirstLaunch(){
-        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
-        if !launchedBefore {
-            setUpView()
-            UserDefaults.standard.set(true, forKey: "launchedBefore")
-        }
-    }
-    
-    func setUpView(){
-        loadCardDataIntoDB(file: "1-100", rank: 0)
     }
     
     func loadCardDataIntoDB(file: String, rank: Int) {
