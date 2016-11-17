@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1981F8691DDCDDA100E800E6 /* 1-100.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1981F8681DDCDDA100E800E6 /* 1-100.txt */; };
+		19933F3C1DDD5D66001C4993 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19933F3B1DDD5D66001C4993 /* SettingsVC.swift */; };
 		19F5FC231DDB837500348EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5FC221DDB837500348EA2 /* AppDelegate.swift */; };
 		19F5FC281DDB837500348EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F5FC261DDB837500348EA2 /* Main.storyboard */; };
 		19F5FC2B1DDB837500348EA2 /* _9PctChn.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19F5FC291DDB837500348EA2 /* _9PctChn.xcdatamodeld */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		1981F8681DDCDDA100E800E6 /* 1-100.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1-100.txt"; sourceTree = "<group>"; };
+		19933F3B1DDD5D66001C4993 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		19F5FC1F1DDB837500348EA2 /* 99PctChn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 99PctChn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F5FC221DDB837500348EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		19F5FC271DDB837500348EA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				19F5FC451DDB89CA00348EA2 /* Helper.swift */,
+				19933F3B1DDD5D66001C4993 /* SettingsVC.swift */,
 				19F5FC391DDB83BC00348EA2 /* MenuVC.swift */,
 				19F5FC3B1DDB83CD00348EA2 /* StudyVC.swift */,
 			);
@@ -198,6 +201,7 @@
 				19F5FC5B1DDB9D4300348EA2 /* Card+CoreDataProperties.swift in Sources */,
 				19F5FC3C1DDB83CD00348EA2 /* StudyVC.swift in Sources */,
 				19F5FC3A1DDB83BC00348EA2 /* MenuVC.swift in Sources */,
+				19933F3C1DDD5D66001C4993 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

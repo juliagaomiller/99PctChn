@@ -16,11 +16,13 @@ class MenuVC: UIViewController {
     @IBOutlet weak var two: UILabel!
     @IBOutlet weak var three: UILabel!
     @IBOutlet weak var oldBtn: UIButton!
+    @IBOutlet weak var masteredBtn: UIButton!
     
     let context = delegate.persistentContainer.viewContext
     
     var allCards = [Card]()
     var zeroDeck = Deck(name: 0)
+    var masteredDeck = Deck(name: 4)
     var otherDecks = Deck(name: nil)
     
     //---Override Functions---
@@ -30,7 +32,7 @@ class MenuVC: UIViewController {
         checkForFirstLaunch()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         updateView()
     }
     
@@ -47,6 +49,9 @@ class MenuVC: UIViewController {
         } else if segue.identifier == "OldSegue" {
             let vc = segue.destination as! StudyVC
             vc.deck = otherDecks
+        } else if segue.identifier == "SettingsSegue" {
+            let vc = segue.destination as! SettingsVC
+            vc.allCards = allCards
         }
     }
     
@@ -76,7 +81,7 @@ class MenuVC: UIViewController {
     func updateView(){
         
         updateAllCards()
-        var zero = 0, one = 0, two = 0, three = 0
+        var zero = 0, one = 0, two = 0, three = 0, four = 0
         for card in allCards {
             switch(card.deck) {
             case 0:
@@ -91,8 +96,11 @@ class MenuVC: UIViewController {
             case 3:
                 three += 1
                 otherDecks.cards.append(card)
+            case 4:
+                four += 1
+                masteredDeck.cards.append(card)
             default:
-                print("DEFAULT: \(card.deck)")
+                fatalError("Card deck is out of range: \(card.deck)")
             }
         }
         
@@ -102,6 +110,7 @@ class MenuVC: UIViewController {
         self.one.text = "\(one)"
         self.two.text = "\(two)"
         self.three.text = "\(three)"
+        masteredBtn.setTitle("Mastered: \(four)", for: .normal)
         
         if otherDecks.cards.count == 0 {
             oldBtn.isEnabled = false
@@ -150,6 +159,9 @@ class MenuVC: UIViewController {
                     exampleTranslationArray.append(unit[3])
                 }
                 i = rank
+                if translationArray.count != chineseArray.count {
+                    fatalError("translation count = \(translationArray.count); chinese count = \(chineseArray.count)")
+                }
                 for _ in chineseArray {
                     let _ = Card(rank: i, chinese: chineseArray[i], pinyin: pinyinArray[i], translation: translationArray[i], example: exampleArray[i], exampleTranslation: exampleTranslationArray[i], context: context)
                     i += 1

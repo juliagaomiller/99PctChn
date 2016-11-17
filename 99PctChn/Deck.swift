@@ -25,6 +25,15 @@ class Deck {
         cards = cards.sorted(by: { $1.deck > $0.deck })
     }
     
+    func removeCard(card:Card){
+        cards = cards.filter({$0 != card})
+    }
+    
+    func returnDeckWithout(card: Card) -> [Card]{
+        let deck = cards.filter({$0 != card})
+        return deck
+    }
+    
     func pickCard() -> Card? {
         let num = returnNumberOfDecks()
         if num == 0 {

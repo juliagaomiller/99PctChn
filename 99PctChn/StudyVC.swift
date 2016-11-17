@@ -15,14 +15,14 @@ class StudyVC: UIViewController {
     @IBOutlet weak var exChn: UILabel!
     @IBOutlet weak var exEng: UILabel!
     
-    var deck: Deck!
+    var deck = Deck(name: nil)
     var currentCard: Card!
     
     var flippedBool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadNextCard()
+        loadNextCard(firstLaunch: true)
         for card in deck.cards {
             print("Rank: \(card.rank), Card: \(card.chinese)")
         }
@@ -42,35 +42,71 @@ class StudyVC: UIViewController {
     @IBAction func onePressed(_ sender: AnyObject) {
         currentCard.deck = 1
         delegate.saveContext()
-        loadNextCard()
+        loadNextCard(firstLaunch: false)
     }
     
     @IBAction func twoPressed(_ sender: AnyObject) {
+        print("Deck countC: ", deck.cards.count)
         currentCard.deck = 2
-        loadNextCard()
+        loadNextCard(firstLaunch: false)
         delegate.saveContext()
     }
     
     @IBAction func threePressed(_ sender: AnyObject) {
         currentCard.deck = 3
-        loadNextCard()
+        loadNextCard(firstLaunch: false)
         delegate.saveContext()
     }
     
+    @IBAction func masteredPressed(_ sender: AnyObject){
+        deck.removeCard(card: currentCard)
+        currentCard.deck = 4
+        loadNextCard(firstLaunch: true)
+        delegate.saveContext()
+        
+    }
+    
+    
     //---Custom Functions---
-    func loadNextCard(){
+    func loadNextCard(firstLaunch: Bool){
         
         var array = [Int]()
         for card in deck.cards {
             array.append(card.deck)
         }
         print("Decks: ", array)
-        //EXPLANATION: The filter is to prevent next card from being the same as the current card
-        let tempCards = deck.cards.filter({$0 != currentCard})
-        let tempDeck = Deck(name: nil)
-        tempDeck.cards = tempCards
         
-        currentCard = tempDeck.pickCard()
+        print("Deck countA: \(deck.cards.count)")
+        if deck.cards.count <= 1 {
+            self.performSegue(withIdentifier: "StudyMenuSegue", sender: self)
+        } else if deck.cards.count <= 3 {
+            print("Deck countA.a: \(deck.cards.count)")
+            if firstLaunch {
+                currentCard = deck.cards.chooseRandom()
+                print("Deck countA.b: \(deck.cards.count)")
+            } else {
+                let tempCards = deck.returnDeckWithout(card: currentCard)
+                if deck.cards.count == 2 {
+                    currentCard = tempCards[0]
+                    print("Deck countA.c: \(deck.cards.count)")
+                } else {
+                    currentCard = tempCards.chooseRandom()
+                    print("Deck countA.d: \(deck.cards.count)")
+                }
+            }
+        } else {
+            if firstLaunch {
+                currentCard = deck.pickCard()
+            } else {
+                //EXPLANATION: Prevents from accidentally picking the same card.
+                let tempCards = deck.returnDeckWithout(card: currentCard)
+                let tempDeck = Deck(name: nil)
+                tempDeck.cards = tempCards
+                currentCard = tempDeck.pickCard()
+            }
+        }
+        print("Deck countB: \(deck.cards.count)")
+        
         print("Current card is: \(currentCard.chinese) , rank: \(currentCard.rank)")
         flippedBool = false
         showResults(flipped: flippedBool)
@@ -101,8 +137,6 @@ class StudyVC: UIViewController {
             }
         }
     }
-    
-    
 }
 
 
