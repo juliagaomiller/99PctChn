@@ -14,6 +14,7 @@ class StudyVC: UIViewController {
     @IBOutlet weak var translation: UILabel!
     @IBOutlet weak var exChn: UILabel!
     @IBOutlet weak var exEng: UILabel!
+    @IBOutlet weak var cardView: UIView!
     
     var deck = Deck(name: nil)
     var currentCard: Card!
@@ -22,6 +23,7 @@ class StudyVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        cardView.layer.cornerRadius = 8.0
         loadNextCard(firstLaunch: true)
         for card in deck.cards {
             print("Rank: \(card.rank), Card: \(card.chinese)")
@@ -113,7 +115,8 @@ class StudyVC: UIViewController {
     }
     
     func showResults(flipped: Bool) {
-        main.textColor = currentCard.returnColor()
+        let lightColor = currentCard.returnColor()
+        main.textColor = lightColor
         if !flipped {
             main.text = currentCard.chinese
             translation.isHidden = true
@@ -121,16 +124,19 @@ class StudyVC: UIViewController {
             exEng.isHidden = true
         } else {
             main.text = currentCard.pinyin
+            translation.textColor = lightColor
             translation.text = currentCard.translation
             translation.isHidden = false
             if currentCard.example != "nil\r" {
                 exChn.isHidden = false
+                exChn.textColor = lightColor
                 exChn.text = currentCard.example
             } else {
                 exChn.isHidden = true
             }
             if currentCard.exampleTranslation != "nil\r" {
                 exEng.isHidden = false
+                exEng.textColor = lightColor
                 exEng.text = currentCard.exampleTranslation
             } else {
                 exEng.isHidden = true

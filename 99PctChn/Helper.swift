@@ -7,6 +7,20 @@
 //
 
 import Foundation
+import UIKit
+
+extension UIColor {
+//    static let darkRed = UIColor(red:0.99, green:0.51, blue:0.44, alpha:1.0)
+//    static let lightRed = UIColor(red:0.99, green:0.68, blue:0.71, alpha:1.0)
+//    static let darkYellow = UIColor(red:1.00, green:0.80, blue:0.40, alpha:1.0)
+//    static let lightYellow = UIColor(red:1.00, green:0.96, blue:0.67, alpha:1.0)
+//    static let darkGreen = UIColor(red:0.50, green:0.91, blue:0.39, alpha:1.0)
+//    static let lightGreen = UIColor(red:0.71, green:1.00, blue:0.73, alpha:1.0)
+//    static let darkBlue = UIColor(red:0.36, green:0.89, blue:0.88, alpha:1.0)
+//    static let lightBlue = UIColor(red:0.64, green:0.98, blue:0.97, alpha:1.0)
+//    static let lightBrown = UIColor(red:0.92, green:0.82, blue:0.62, alpha:1.0)
+//    static let darkBrown = UIColor(red:0.46, green:0.33, blue:0.18, alpha:1.0)
+}
 
 extension MutableCollection where Indices.Iterator.Element == Index {
     /// Shuffles the contents of this collection.
@@ -52,5 +66,9 @@ extension Array where Element: Equatable {
 }
 
 class Helper {
-    
+    let darkBrown, lightBrown: UIColor!
+    init(){
+        darkBrown = UIColor(red:0.46, green:0.33, blue:0.18, alpha:1.0)
+        lightBrown = UIColor(red:0.92, green:0.82, blue:0.62, alpha:1.0)
+    }
 }

@@ -22,14 +22,14 @@
 ,"central; center, middle; in the midst of; hit (target); attain",nil
 到,dào,nil
 ,"go to, arrive, been to",nil
-资,zī,nil
-,"property; wealth; capital",nil
+资,zī,资料
+,"property; wealth; capital",zī liào (data)
 要,yào,nil
 ,"necessary, essential; necessity",nil
 可,kě,nil
 ,"may, can, -able; possibly",nil
-以,yǐ,nil
-,"by means of; thereby, therefore; consider as; in order to",nil
+以,yǐ,以前
+,"by means of; thereby, therefore; consider as; in order to",yǐ qián (before)
 这,zhè,nil
 ,"this, the, here",nil
 个,gè,nil
@@ -50,18 +50,18 @@
 ,"just, simply; to come, go to; to approach, near",nil
 学,xué,nil
 ,"learning, knowledge; school",nil
-交,jiāo,nil
-,"mix; intersect; exchange, communicate; deliver",nil
+交,jiāo,交流
+,"mix; intersect; exchange, communicate; deliver",jiāo liú (communicate with)
 也,yě,nil
 ,"also; classical final particle of strong affirmation or identity",nil
 用,yòng,nil
 ,"use, employ, apply, operate; use",nil
 能,néng,nil
 ,"to be able; can, permitted to; ability",nil
-如,rú,nil
-,"if, supposing; as if; like, as",nil
-文,wén,nil
-,"literature, culture, writing",nil
+如,rú,如果
+,"if, supposing; as if; like, as",rú guǒ (in case)
+文,wén,文化
+,"literature, culture, writing",wén huà (culture)
 时,shí,nil
 ,"time, season; era, age, period",nil
 没,méi,nil
@@ -72,14 +72,14 @@
 ,"other, another; he, she, it",nil
 看,kàn,nil
 ,"look, see; examine, scrutinize",nil
-提,tí,nil
-,"hold in hand; lift in hand",nil
+提,tí,提供
+,"hold in hand; lift in hand",tí gōng (provide)
 那,nà,nil
 ,"that, that one, those",nil
 问,wèn,nil
 ,"ask (about), inquire after",nil
-生,shēng,nil
-,"life, living, lifetime; birth",nil
+生,shēng,生产
+,"life, living, lifetime; birth",shēng chǎn (produce)
 过,guò,nil
 ,"pass, pass through, go across",nil
 下,xià,nil
@@ -90,44 +90,44 @@
 ,"sky, heaven; god, celestial",nil
 们,men,nil
 ,"adjunct pronoun indicate plural",nil
-所,suǒ,nil
-,"place, location; numerary adjunct",nil
+所,suǒ,所以
+,"place, location; numerary adjunct",suǒ yǐ (and so)
 多,duō,nil
 ,"much, many; more than, over",nil
-麽,mó,nil
-,"dimi.",nil
+么,mó,怎么
+,"dimi.",zěn me (how)
 小,xiǎo,nil
 ,"small, tiny, insignificant",nil
 想,xiǎng,nil
 ,"think, speculate, plan, consider",nil
 得,dé,nil
 ,"obtain, get, gain, acquire",nil
-之,zhī,nil
-,"'s (marks preceding phrase as modifier of following phrase); it, him her, them; go to",nil
-还,huán,nil
-,"still, yet, also, besides",nil
+之,zhī,之前
+,"'s (marks preceding phrase as modifier of following phrase); it, him her, them; go to",zhī qián (prior to)
+还,hái,还有
+,"still, yet, also, besides",and also
 电,diàn,nil
 ,"electricity, electric; lightning",nil
 出,chū,nil
 ,"go out, send out; stand; produce",nil
 工,gōng,nil
 ,"labor, work; worker, laborer",nil
-对,duì,nil
-,"correct, right; facing, opposed",nil
-都,dū,nil
-,"metropolis, capital; all, the whole; elegant, refined",nil
-机,jī,nil
-,"machine; moment, chance",nil
-自,zì,nil
-,"self, private, personal; from",nil
+对,duì,对比
+,"correct, right; facing, opposed",duì bǐ (compared)
+都,dōu; dū,都市
+,"metropolis, capital; all, the whole; elegant, refined",dū shì (city)
+机,jī,机会
+,"machine; moment, chance",opportunity
+自,zì,自然
+,"self, private, personal; from",zì rán (natural）
 后,hòu,nil
 ,"behind, rear, after; descendents",nil
 子,zǐ,nil
 ,"offspring, child; fruit, seed of; 1st terrestrial branch",nil
-而,ér,nil
-,"and; and then; and yet; but",nil
-讯,xùn,nil
-,"inquire; ask; examine; reproach",nil
+而,ér,而且
+,"and; and then; and yet; but",ér qiě (and)
+讯,xùn,通讯
+,"inquire; ask; examine; reproach",tōng xùn (communication)
 站,zhàn,nil
 ,"stand up; a stand, station",nil
 去,qù,nil
@@ -138,48 +138,48 @@
 ,"single, one of pair, lone",nil
 家,jiā,nil
 ,"house, home, residence; family",nil
-知,zhī,nil
-,"know, perceive, comprehend",nil
+知,zhī,知道
+,"know, perceive, comprehend",zhī dào (know)
 国,guó,nil
 ,"nation, country, nation-state",nil
-台,tái,nil
-,"taiphoon",nil
+台,tái,台湾
+,"taiphoon",Taiwan
 很,hěn,nil
 ,"very, quite, much",nil
 信,xìn,nil
 ,"trust, believe; letter",nil
 成,chéng,nil
 ,"completed, finished, fixed",nil
-章,zhāng,nil
-,"composition; chapter, section",nil
-何,hé,nil
-,"what, why, where, which, how",nil
+章,zhāng,文章
+,"composition; chapter, section",article
+何,hé,如何
+,"what, why, where, which, how",rú hé (how)
 同,tòng,nil
-,"alley, lane",nil
-道,dào,nil
+,"alley, lane",tóng shí (simultaneously)
+道,dào,知道
 ,"path, road, street; method, way",nil
 地,dì,nil
 ,"earth; soil, ground; region",nil
-发,fǎ,nil
-,"hair",nil
+发,fǎ,发现
+,"hair",fā xiàn (find)
 法,fǎ,nil
 ,"law, rule, regulation, statute; France, French",nil
 无,wú,nil
 ,"negative, no, not; lack, have no",nil
-然,rán,nil
-,"yes, certainly; pledge, promise",nil
-但,dàn,nil
-,"only; but, however, yet, still",nil
-吗,ma,nil
+然,rán,当然
+,"yes, certainly; pledge, promise",dāng rán (of course)
+但,dàn,但是
+,"only; but, however, yet, still",but
+吗,ma,好吗？
 ,"final interrogative particle",nil
-当,dāng,nil
-,"bear, accept, undertake; just",nil
-于,yú,nil
-,"in, at, on; interjection alas!",nil
-本,běn,nil
-,"root, origin, source; basis",nil
-现,xiàn,nil
-,"appear, manifest, become visible",nil
+当,dāng,当前
+,"bear, accept, undertake; just",dāng qián (currently)
+于,yú,由于
+,"in, at, on; interjection alas!",yóu yú (due to)
+本,běn,本来
+,"root, origin, source; basis",běn lái (originaly)
+现,xiàn,现在
+,"appear, manifest, become visible",right now
 年,nián,nil
 ,"year; new-years; person's age",nil
 前,qián,nil
@@ -188,13 +188,13 @@
 ,"real, actual, true, genuine",nil
 最,zuì,nil
 ,"most, extremely, exceedingly",nil
-和,hé,nil
-,"harmony, peace; peaceful, calm",nil
+和,hé,和谐
+,"and, harmony, peace; peaceful, calm",hé xié (harmonious)
 新,xīn,nil
 ,"new, recent, fresh, modern",nil
-因,yīn,nil
-,"cause, reason; by; because (of)",nil
-果,guǒ,nil
-,"fruit; result",nil
-定,dìng,nil
-,"decide, settle, fix",nil
+因,yīn,因为
+,"cause, reason; by; because (of)",because
+果,guǒ,结果
+,"fruit; result",jié guǒ (result)
+定,dìng,确
+,"decide, settle, fix",què dìng (determine)

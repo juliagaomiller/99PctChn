@@ -41,18 +41,18 @@ public class Card: NSManagedObject {
     func returnColor() -> UIColor {
         switch(self.deck) {
         case 0:
-            return UIColor.white
+                return Helper().lightBrown
         case 1:
-        return UIColor.red
+                return UIColor.red
         case 2:
-            return UIColor.yellow
+                return UIColor.yellow
         case 3:
-            return UIColor.green
+               return UIColor.green
+        case 4:
+                return UIColor.blue
         default:
-            print("Deck index: ", self.deck)
-            return UIColor.gray
+            fatalError("Deck index out of range: \(self.deck)")
         }
-        
     }
 
 }

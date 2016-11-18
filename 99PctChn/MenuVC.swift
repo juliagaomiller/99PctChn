@@ -110,7 +110,7 @@ class MenuVC: UIViewController {
         self.one.text = "\(one)"
         self.two.text = "\(two)"
         self.three.text = "\(three)"
-        masteredBtn.setTitle("Mastered: \(four)", for: .normal)
+        masteredBtn.setTitle("\(four)", for: .normal)
         
         if otherDecks.cards.count == 0 {
             oldBtn.isEnabled = false
