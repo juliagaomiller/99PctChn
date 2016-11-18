@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1972F61C1DDF05D300E920AC /* AllCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1972F61B1DDF05D300E920AC /* AllCardsVC.swift */; };
+		1972F61E1DDF07EC00E920AC /* PlainCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1972F61D1DDF07EC00E920AC /* PlainCardCell.swift */; };
 		19933F3C1DDD5D66001C4993 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19933F3B1DDD5D66001C4993 /* SettingsVC.swift */; };
 		19E174B31DDE9620004104D6 /* 1-100.txt in Resources */ = {isa = PBXBuildFile; fileRef = 19E174B21DDE9620004104D6 /* 1-100.txt */; };
 		19E174B51DDEDE28004104D6 /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E174B41DDEDE28004104D6 /* ShadowButton.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1972F61B1DDF05D300E920AC /* AllCardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCardsVC.swift; sourceTree = "<group>"; };
+		1972F61D1DDF07EC00E920AC /* PlainCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainCardCell.swift; sourceTree = "<group>"; };
 		19933F3B1DDD5D66001C4993 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		19E174B21DDE9620004104D6 /* 1-100.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1-100.txt"; sourceTree = "<group>"; };
 		19E174B41DDEDE28004104D6 /* ShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
@@ -92,6 +96,7 @@
 				19933F3B1DDD5D66001C4993 /* SettingsVC.swift */,
 				19F5FC391DDB83BC00348EA2 /* MenuVC.swift */,
 				19F5FC3B1DDB83CD00348EA2 /* StudyVC.swift */,
+				1972F61B1DDF05D300E920AC /* AllCardsVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				19E174B41DDEDE28004104D6 /* ShadowButton.swift */,
+				1972F61D1DDF07EC00E920AC /* PlainCardCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -200,8 +206,10 @@
 				19E174B51DDEDE28004104D6 /* ShadowButton.swift in Sources */,
 				19F5FC2B1DDB837500348EA2 /* _9PctChn.xcdatamodeld in Sources */,
 				19F5FC461DDB89CA00348EA2 /* Helper.swift in Sources */,
+				1972F61E1DDF07EC00E920AC /* PlainCardCell.swift in Sources */,
 				19F5FC231DDB837500348EA2 /* AppDelegate.swift in Sources */,
 				19F5FC491DDB89F600348EA2 /* Deck.swift in Sources */,
+				1972F61C1DDF05D300E920AC /* AllCardsVC.swift in Sources */,
 				19F5FC5B1DDB9D4300348EA2 /* Card+CoreDataProperties.swift in Sources */,
 				19F5FC3C1DDB83CD00348EA2 /* StudyVC.swift in Sources */,
 				19F5FC3A1DDB83BC00348EA2 /* MenuVC.swift in Sources */,

@@ -11,19 +11,19 @@ import CoreData
 
 class MenuVC: UIViewController {
     
-    @IBOutlet weak var zero: UILabel!
     @IBOutlet weak var one: UILabel!
     @IBOutlet weak var two: UILabel!
     @IBOutlet weak var three: UILabel!
     @IBOutlet weak var oldBtn: UIButton!
     @IBOutlet weak var masteredBtn: UIButton!
+    @IBOutlet weak var allCardsBtn: UIButton!
     
     let context = delegate.persistentContainer.viewContext
     
     var allCards = [Card]()
-    var zeroDeck = Deck(name: 0)
-    var masteredDeck = Deck(name: 4)
-    var otherDecks = Deck(name: nil)
+    var zeroDeck = Deck()
+    var masteredDeck = Deck()
+    var otherDecks = Deck()
     
     //---Override Functions---
     
@@ -37,21 +37,31 @@ class MenuVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "NewSegue" {
+        guard let identifier = segue.identifier else {
+            return
+        }
+        switch (identifier) {
+        case "NewSegue":
             var i = 0
-            let deck = Deck(name: 0)
+            let deck = Deck()
             while i < 10 {
                 deck.cards.append(zeroDeck.cards[i])
                 i += 1
             }
             let vc = segue.destination as! StudyVC
             vc.deck = deck
-        } else if segue.identifier == "OldSegue" {
+        case "OldSegue":
             let vc = segue.destination as! StudyVC
             vc.deck = otherDecks
-        } else if segue.identifier == "SettingsSegue" {
+        case "SettingsSegue":
             let vc = segue.destination as! SettingsVC
             vc.allCards = allCards
+        case "GreySegue":
+            let vc = segue.destination as! AllCardsVC
+            vc.allCards = allCards
+            vc.displayDeck = zeroDeck
+        default:
+            break
         }
     }
     
@@ -105,8 +115,7 @@ class MenuVC: UIViewController {
         }
         
         zeroDeck.sortByRank()
-        
-        self.zero.text = "\(zero)/\(allCards.count)"
+        self.allCardsBtn.setTitle("\(zero)/\(allCards.count)", for: .normal)
         self.one.text = "\(one)"
         self.two.text = "\(two)"
         self.three.text = "\(three)"

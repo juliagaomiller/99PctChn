@@ -10,12 +10,7 @@ import Foundation
 
 class Deck {
     
-    var name: Int?
     var cards = [Card]()
-    
-    init(name: Int?){
-        self.name = name
-    }
     
     func sortByRank(){
         cards = cards.sorted(by: { $1.rank > $0.rank })
@@ -25,8 +20,33 @@ class Deck {
         cards = cards.sorted(by: { $1.deck > $0.deck })
     }
     
+    func isEmpty()->Bool {
+        if cards.count == 0 {
+            return true
+        } else {
+            return false
+        }
+    }
+    
     func removeCard(card:Card){
         cards = cards.filter({$0 != card})
+    }
+    
+    func containsDeck(deck: Int)->Bool {
+        for c in cards {
+            if c.deck == deck {
+                return true
+            }
+        }
+        return false
+    }
+    
+    func removeDeck(deck: Int){
+        for c in cards {
+            if c.deck == deck {
+                removeCard(card: c)
+            }
+        }
     }
     
     func returnDeckWithout(card: Card) -> [Card]{

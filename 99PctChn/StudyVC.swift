@@ -16,7 +16,7 @@ class StudyVC: UIViewController {
     @IBOutlet weak var exEng: UILabel!
     @IBOutlet weak var cardView: UIView!
     
-    var deck = Deck(name: nil)
+    var deck = Deck()
     var currentCard: Card!
     
     var flippedBool = false
@@ -102,7 +102,7 @@ class StudyVC: UIViewController {
             } else {
                 //EXPLANATION: Prevents from accidentally picking the same card.
                 let tempCards = deck.returnDeckWithout(card: currentCard)
-                let tempDeck = Deck(name: nil)
+                let tempDeck = Deck()
                 tempDeck.cards = tempCards
                 currentCard = tempDeck.pickCard()
             }
@@ -115,8 +115,9 @@ class StudyVC: UIViewController {
     }
     
     func showResults(flipped: Bool) {
-        let lightColor = currentCard.returnColor()
-        main.textColor = lightColor
+        let color = currentCard.returnColor()
+        cardView.layer.backgroundColor = color.light.cgColor
+        main.textColor = color.dark
         if !flipped {
             main.text = currentCard.chinese
             translation.isHidden = true
@@ -124,19 +125,19 @@ class StudyVC: UIViewController {
             exEng.isHidden = true
         } else {
             main.text = currentCard.pinyin
-            translation.textColor = lightColor
+            translation.textColor = color.dark
             translation.text = currentCard.translation
             translation.isHidden = false
             if currentCard.example != "nil\r" {
                 exChn.isHidden = false
-                exChn.textColor = lightColor
+                exChn.textColor = color.dark
                 exChn.text = currentCard.example
             } else {
                 exChn.isHidden = true
             }
             if currentCard.exampleTranslation != "nil\r" {
                 exEng.isHidden = false
-                exEng.textColor = lightColor
+                exEng.textColor = color.dark
                 exEng.text = currentCard.exampleTranslation
             } else {
                 exEng.isHidden = true
