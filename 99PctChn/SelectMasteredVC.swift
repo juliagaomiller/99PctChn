@@ -48,7 +48,7 @@ class SelectMasteredVC: UIViewController {
         //delegate.savecontext
     }
     
-    func addGesturesRecognizers(){
+//    func addGesturesRecognizers(){
 //        let double = UITapGestureRecognizer(target: self, action: #selector(doubleTap(gestureRecognizer:)))
 //        double.numberOfTapsRequired = 2
 //        self.rightTableView.addGestureRecognizer(double)
@@ -57,9 +57,9 @@ class SelectMasteredVC: UIViewController {
 //        single.numberOfTapsRequired = 1
 //        self.rightTableView.addGestureRecognizer(single)
 //        self.leftTableView.addGestureRecognizer(single)
-    }
+//    }
     
-    func doubleTap(gestureRecognizer: UITapGestureRecognizer){
+//    func doubleTap(gestureRecognizer: UITapGestureRecognizer){
 //        var cell = MasteredCell()
 //        let location: CGPoint = gestureRecognizer.location(in: self.customView)
 //        if let indexPath = self.leftTableView.indexPathForRow(at: location){
@@ -79,7 +79,7 @@ class SelectMasteredVC: UIViewController {
 //            cell.single = false
 //            checkForDoubleTap(cell: cell)
 //        }
-    }
+//    }
     
     func singleTap(){
         print("singleTapped")
@@ -118,20 +118,20 @@ extension SelectMasteredVC: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.cellForRow(at: indexPath) as! MasteredCell
-        cell.updateClicks()
-        switch(cell.click){
-        case 0:
-            cell.backgroundColor = UIColor.clear
-        case 1:
-            cell.backgroundColor = h.lightBlue
-        case 2:
-            cell.backgroundColor = UIColor.blue
-        default:
-            fatalError()
-        }
-    }
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let cell = tableView.cellForRow(at: indexPath) as! MasteredCell
+//        cell.updateClicks()
+//        switch(cell.click){
+//        case 0:
+//            cell.backgroundColor = UIColor.clear
+//        case 1:
+//            cell.backgroundColor = h.lightBlue
+//        case 2:
+//            cell.backgroundColor = UIColor.blue
+//        default:
+//            fatalError()
+//        }
+//    }
 }
 
 extension SelectMasteredVC: CheckForDoubleTap {
