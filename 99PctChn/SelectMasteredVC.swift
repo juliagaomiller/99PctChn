@@ -19,17 +19,16 @@ class SelectMasteredVC: UIViewController {
     
     @IBOutlet weak var leftTableView: UITableView!
     @IBOutlet weak var rightTableView: UITableView!
-    @IBOutlet weak var customView: UIView!
     
     var leftDeck = [Card]()
     var rightDeck = [Card]()
     
-    let h = Helper()
+//    let h = Helper()
     
     static var allCells = [MasteredCell]()
     
-    var masteredDeck = Deck()
-    var masteredCards = [Card]()
+//    var masteredDeck = Deck()
+//    var masteredCards = [Card]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,9 +80,9 @@ class SelectMasteredVC: UIViewController {
 //        }
 //    }
     
-    func singleTap(){
-        print("singleTapped")
-    }
+//    func singleTap(){
+//        print("singleTapped")
+//    }
 
     
 }
@@ -113,7 +112,7 @@ extension SelectMasteredVC: UITableViewDelegate, UITableViewDataSource {
         let card = deck[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as! MasteredCell
         cell.configureCell(card: card)
-//        cell.delegate = self
+        cell.delegate = self
         SelectMasteredVC.allCells.append(cell)
         return cell
     }
