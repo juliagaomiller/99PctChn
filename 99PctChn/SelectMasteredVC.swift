@@ -8,13 +8,26 @@
 
 import UIKit
 
+protocol CheckForDoubleTap: class {
+    func addToMasteredCards(card: Card)
+    func removeFromMasteredCards(card: Card)
+    func checkForDoubleTap(cell: MasteredCell)
+    func addMultipleToMasteredCards(beginIndex: Int, endIndex: Int)
+}
+
 class SelectMasteredVC: UIViewController {
     
     @IBOutlet weak var leftTableView: UITableView!
     @IBOutlet weak var rightTableView: UITableView!
+    @IBOutlet weak var customView: UIView!
     
     var leftDeck = [Card]()
     var rightDeck = [Card]()
+    
+    static var allCells = [MasteredCell]()
+    
+    var masteredDeck = Deck()
+    var masteredCards = [Card]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +37,57 @@ class SelectMasteredVC: UIViewController {
         
         rightTableView.delegate = self
         rightTableView.dataSource = self
+        
+//        addGesturesRecognizers()
+    }
+    
+    @IBAction func donePressed(){
+        //masteredcards.deck = 4
+        //delegate.savecontext
+    }
+    
+    func addGesturesRecognizers(){
+//        let double = UITapGestureRecognizer(target: self, action: #selector(doubleTap(gestureRecognizer:)))
+//        double.numberOfTapsRequired = 2
+//        self.rightTableView.addGestureRecognizer(double)
+//        self.leftTableView.addGestureRecognizer(double)
+//        let single = UITapGestureRecognizer(target: self, action: #selector(singleTap))
+//        single.numberOfTapsRequired = 1
+//        self.rightTableView.addGestureRecognizer(single)
+//        self.leftTableView.addGestureRecognizer(single)
+    }
+    
+    func doubleTap(gestureRecognizer: UITapGestureRecognizer){
+//        var cell = MasteredCell()
+//        let location: CGPoint = gestureRecognizer.location(in: self.customView)
+//        if let indexPath = self.leftTableView.indexPathForRow(at: location){
+//            cell = self.leftTableView.cellForRow(at: indexPath) as! MasteredCell!
+//        } else if let indexPath = self.rightTableView.indexPathForRow(at: location){
+//            cell = self.rightTableView.cellForRow(at: indexPath) as! MasteredCell!
+//        } else { print("Did not tap on table") }
+//        guard let _ = cell.card else { fatalError() }
+//        if cell.double {
+//            cell.chnLabel.backgroundColor = UIColor.clear
+//            removeFromMasteredCards(card: cell.card!)
+//            cell.double = false
+//        } else {
+//            cell.chnLabel.backgroundColor = UIColor.blue
+//            addToMasteredCards(card: cell.card!)
+//            cell.double = true
+//            cell.single = false
+//            checkForDoubleTap(cell: cell)
+//        }
+    }
+    
+    func singleTap(){
+        print("singleTapped")
     }
 
     
 }
 
 extension SelectMasteredVC: UITableViewDelegate, UITableViewDataSource {
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -42,6 +100,7 @@ extension SelectMasteredVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let identifier: String!
         let deck: [Card]
+        
         if tableView == leftTableView {
             identifier = "LeftCell"
             deck = leftDeck
@@ -52,7 +111,31 @@ extension SelectMasteredVC: UITableViewDelegate, UITableViewDataSource {
         let card = deck[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as! MasteredCell
         cell.configureCell(card: card)
+        cell.delegate = self
+        SelectMasteredVC.allCells.append(cell)
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
+    }
+}
+
+extension SelectMasteredVC: CheckForDoubleTap {
+    
+    func addToMasteredCards(card: Card) {
+        print("Added")
+    }
+    
+    func removeFromMasteredCards(card: Card) {
+        print("Removed")
+    }
+    
+    func checkForDoubleTap(cell: MasteredCell) {
+        print("CheckForDoubleTap")
+    }
+    
+    func addMultipleToMasteredCards(beginIndex: Int, endIndex: Int) {
+        //
+    }
 }

@@ -18,11 +18,9 @@ class MenuVC: UIViewController {
     @IBOutlet weak var masteredBtn: UIButton!
     @IBOutlet weak var allCardsBtn: UIButton!
     
-//    var newVC: SelectMasteredVC! = nil
     
     let context = delegate.persistentContainer.viewContext
     
-    //var allCards = [Card]()
     var completeDeck = Deck()
     var backgroundDeck = Deck()
     var zeroDeck = Deck()
@@ -33,14 +31,21 @@ class MenuVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(false)
-//        newVC = self.storyboard?.instantiateViewController(withIdentifier: "SelectMasteredVC") as! SelectMasteredVC
         checkForFirstLaunch()
         updateView()
+        
+        //DELETE BELOW
+        zeroDeck.sortByRank()
+        let newVC = self.storyboard?.instantiateViewController(withIdentifier: "SelectMasteredVC") as! SelectMasteredVC
+        let split = zeroDeck.cards.split()
+        newVC.leftDeck.append(contentsOf: split[0])
+        newVC.rightDeck.append(contentsOf: split[1])
+        self.show(newVC, sender: nil)
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -106,21 +111,15 @@ class MenuVC: UIViewController {
         while i < 100 {
             cards[i].deck = 0
             zeroDeck.cards.append(cards[i])
-            print(zeroDeck.cards[i].rank)
             i += 1
         }
         
-        //TO DO 
-        //when press done, closes the selectmasteredvc window
-        //double tap on the table view cell if want to select multiple
-        //double
-        zeroDeck.sortByRank()
-        let newVC = self.storyboard?.instantiateViewController(withIdentifier: "SelectMasteredVC") as! SelectMasteredVC
-        let split = zeroDeck.cards.split()
-        newVC.leftDeck.append(contentsOf: split[0])
-        newVC.rightDeck.append(contentsOf: split[1])
-        self.show(newVC, sender: nil)
-        //self.performSegue(withIdentifier: "SelectMasteredSegue", sender: nil)
+//        zeroDeck.sortByRank()
+//        let newVC = self.storyboard?.instantiateViewController(withIdentifier: "SelectMasteredVC") as! SelectMasteredVC
+//        let split = zeroDeck.cards.split()
+//        newVC.leftDeck.append(contentsOf: split[0])
+//        newVC.rightDeck.append(contentsOf: split[1])
+//        self.show(newVC, sender: nil)
     }
     
     func updateView(){

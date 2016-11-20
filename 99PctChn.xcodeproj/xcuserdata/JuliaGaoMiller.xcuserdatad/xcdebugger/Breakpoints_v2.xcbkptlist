@@ -86,33 +86,65 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "99PctChn/MenuVC.swift"
-            timestampString = "501313390.736831"
+            filePath = "99PctChn/SelectMasteredVC.swift"
+            timestampString = "501374730.060053"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
-            landmarkName = "appendHundredNewCardsToZeroDeck(deck:)"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "doubleTap(gestureRecognizer:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "99PctChn/MenuVC.swift"
-            timestampString = "501313390.736831"
+            filePath = "99PctChn/SelectMasteredVC.swift"
+            timestampString = "501374731.761743"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "117"
-            endingLineNumber = "117"
-            landmarkName = "appendHundredNewCardsToZeroDeck(deck:)"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "doubleTap(gestureRecognizer:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_9PctChn.SelectMasteredVC.doubleTap (gestureRecognizer : __ObjC.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "99PctChn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/JuliaGaoMiller/Desktop/99PctChn/99PctChn/SelectMasteredVC.swift"
+                  timestampString = "501374902.472037"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "1427">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_9PctChn.SelectMasteredVC.doubleTap (gestureRecognizer : __ObjC.UITapGestureRecognizer) -&gt; ()"
+                  moduleName = "99PctChn"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/JuliaGaoMiller/Desktop/99PctChn/99PctChn/SelectMasteredVC.swift"
+                  timestampString = "501374902.474591"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "4038">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

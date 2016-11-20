@@ -122,6 +122,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xkB-uc-qNR">
+                                <rect key="frame" x="0.0" y="20" width="320" height="482"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eZa-F1-qoK">
                                 <rect key="frame" x="0.0" y="20" width="160" height="482"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -168,24 +172,29 @@
                             <constraint firstItem="33s-t7-0bB" firstAttribute="top" secondItem="Sfn-pI-BX9" secondAttribute="bottom" id="MPr-mw-R6I"/>
                             <constraint firstItem="eZa-F1-qoK" firstAttribute="top" secondItem="Sfn-pI-BX9" secondAttribute="bottom" id="Nwc-Sr-Yu7"/>
                             <constraint firstItem="q2V-TO-UUA" firstAttribute="centerY" secondItem="ADw-nj-Uwj" secondAttribute="centerY" id="PtB-g4-4GT"/>
+                            <constraint firstItem="xkB-uc-qNR" firstAttribute="top" secondItem="Sfn-pI-BX9" secondAttribute="bottom" id="QUg-62-2UQ"/>
                             <constraint firstItem="eZa-F1-qoK" firstAttribute="leading" secondItem="ADw-nj-Uwj" secondAttribute="leading" id="Zjt-0b-82D"/>
                             <constraint firstItem="p1f-35-qUj" firstAttribute="top" secondItem="33s-t7-0bB" secondAttribute="bottom" constant="8" id="b33-CM-ugi"/>
                             <constraint firstAttribute="trailing" secondItem="p1f-35-qUj" secondAttribute="trailing" constant="8" id="cFs-Dl-cdE"/>
                             <constraint firstItem="33s-t7-0bB" firstAttribute="leading" secondItem="q2V-TO-UUA" secondAttribute="leading" id="cw8-ku-wAB"/>
                             <constraint firstItem="cjL-Ay-drR" firstAttribute="top" secondItem="p1f-35-qUj" secondAttribute="bottom" constant="8" id="g7N-Q7-A4J"/>
+                            <constraint firstItem="xkB-uc-qNR" firstAttribute="leading" secondItem="ADw-nj-Uwj" secondAttribute="leading" id="gbz-MM-bcW"/>
                             <constraint firstItem="q2V-TO-UUA" firstAttribute="centerX" secondItem="ADw-nj-Uwj" secondAttribute="centerX" id="hsb-qZ-UCM"/>
+                            <constraint firstItem="p1f-35-qUj" firstAttribute="top" secondItem="xkB-uc-qNR" secondAttribute="bottom" constant="8" id="jVQ-mz-15p"/>
                             <constraint firstItem="p1f-35-qUj" firstAttribute="top" secondItem="eZa-F1-qoK" secondAttribute="bottom" constant="8" id="rwb-rv-heY"/>
                             <constraint firstAttribute="trailing" secondItem="33s-t7-0bB" secondAttribute="trailing" id="v5b-UC-Kow"/>
+                            <constraint firstAttribute="trailing" secondItem="xkB-uc-qNR" secondAttribute="trailing" id="yCd-5G-1fF"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="customView" destination="xkB-uc-qNR" id="ryQ-qw-lMF"/>
                         <outlet property="leftTableView" destination="eZa-F1-qoK" id="y19-mZ-514"/>
                         <outlet property="rightTableView" destination="33s-t7-0bB" id="ihH-rP-Zqg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fEK-mE-r6q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-439" y="950"/>
+            <point key="canvasLocation" x="-440.625" y="949.64788732394368"/>
         </scene>
         <!--All CardsVC-->
         <scene sceneID="0FR-gU-2dK">
