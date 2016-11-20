@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1957430A1DE120A400B877B1 /* 1-500.txt in Resources */ = {isa = PBXBuildFile; fileRef = 195743091DE120A400B877B1 /* 1-500.txt */; };
 		1972F61C1DDF05D300E920AC /* AllCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1972F61B1DDF05D300E920AC /* AllCardsVC.swift */; };
 		1972F61E1DDF07EC00E920AC /* PlainCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1972F61D1DDF07EC00E920AC /* PlainCardCell.swift */; };
 		19933F3C1DDD5D66001C4993 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19933F3B1DDD5D66001C4993 /* SettingsVC.swift */; };
-		19E174B31DDE9620004104D6 /* 1-100.txt in Resources */ = {isa = PBXBuildFile; fileRef = 19E174B21DDE9620004104D6 /* 1-100.txt */; };
+		199DBAEA1DE151EF002D050D /* MasteredCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199DBAE91DE151EF002D050D /* MasteredCell.swift */; };
+		199DBAEC1DE152F3002D050D /* SelectMasteredVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199DBAEB1DE152F3002D050D /* SelectMasteredVC.swift */; };
 		19E174B51DDEDE28004104D6 /* ShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E174B41DDEDE28004104D6 /* ShadowButton.swift */; };
 		19F5FC231DDB837500348EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F5FC221DDB837500348EA2 /* AppDelegate.swift */; };
 		19F5FC281DDB837500348EA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19F5FC261DDB837500348EA2 /* Main.storyboard */; };
@@ -26,10 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		195743091DE120A400B877B1 /* 1-500.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1-500.txt"; sourceTree = "<group>"; };
 		1972F61B1DDF05D300E920AC /* AllCardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllCardsVC.swift; sourceTree = "<group>"; };
 		1972F61D1DDF07EC00E920AC /* PlainCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlainCardCell.swift; sourceTree = "<group>"; };
 		19933F3B1DDD5D66001C4993 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
-		19E174B21DDE9620004104D6 /* 1-100.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1-100.txt"; sourceTree = "<group>"; };
+		199DBAE91DE151EF002D050D /* MasteredCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasteredCell.swift; sourceTree = "<group>"; };
+		199DBAEB1DE152F3002D050D /* SelectMasteredVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectMasteredVC.swift; sourceTree = "<group>"; };
 		19E174B41DDEDE28004104D6 /* ShadowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowButton.swift; sourceTree = "<group>"; };
 		19F5FC1F1DDB837500348EA2 /* 99PctChn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 99PctChn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F5FC221DDB837500348EA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 				19F5FC391DDB83BC00348EA2 /* MenuVC.swift */,
 				19F5FC3B1DDB83CD00348EA2 /* StudyVC.swift */,
 				1972F61B1DDF05D300E920AC /* AllCardsVC.swift */,
+				199DBAEB1DE152F3002D050D /* SelectMasteredVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -104,7 +109,7 @@
 		19F5FC3E1DDB891C00348EA2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				19E174B21DDE9620004104D6 /* 1-100.txt */,
+				195743091DE120A400B877B1 /* 1-500.txt */,
 				19F5FC481DDB89F600348EA2 /* Deck.swift */,
 				19F5FC581DDB9D4300348EA2 /* Card+CoreDataClass.swift */,
 				19F5FC441DDB895A00348EA2 /* Private */,
@@ -117,6 +122,7 @@
 			children = (
 				19E174B41DDEDE28004104D6 /* ShadowButton.swift */,
 				1972F61D1DDF07EC00E920AC /* PlainCardCell.swift */,
+				199DBAE91DE151EF002D050D /* MasteredCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -156,7 +162,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Julia Miller";
 				TargetAttributes = {
 					19F5FC1E1DDB837500348EA2 = {
@@ -190,7 +196,7 @@
 			files = (
 				19F5FC301DDB837500348EA2 /* LaunchScreen.storyboard in Resources */,
 				19F5FC2D1DDB837500348EA2 /* Assets.xcassets in Resources */,
-				19E174B31DDE9620004104D6 /* 1-100.txt in Resources */,
+				1957430A1DE120A400B877B1 /* 1-500.txt in Resources */,
 				19F5FC281DDB837500348EA2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,10 +216,12 @@
 				19F5FC231DDB837500348EA2 /* AppDelegate.swift in Sources */,
 				19F5FC491DDB89F600348EA2 /* Deck.swift in Sources */,
 				1972F61C1DDF05D300E920AC /* AllCardsVC.swift in Sources */,
+				199DBAEA1DE151EF002D050D /* MasteredCell.swift in Sources */,
 				19F5FC5B1DDB9D4300348EA2 /* Card+CoreDataProperties.swift in Sources */,
 				19F5FC3C1DDB83CD00348EA2 /* StudyVC.swift in Sources */,
 				19F5FC3A1DDB83BC00348EA2 /* MenuVC.swift in Sources */,
 				19933F3C1DDD5D66001C4993 /* SettingsVC.swift in Sources */,
+				199DBAEC1DE152F3002D050D /* SelectMasteredVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -26,6 +26,7 @@ class AllCardsVC: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        print(displayDeck.cards.count)
         populateDecks()
 
     }
@@ -64,8 +65,6 @@ class AllCardsVC: UIViewController {
     }
     
     func populateDecks(){
-        print(allDecks[2].cards.count)
-        //check if is nil or 0 or 1 then write an isEmpty function in Deck
         for c in allCards {
             switch(c.deck) {
             case 0:

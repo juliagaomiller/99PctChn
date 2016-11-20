@@ -1,0 +1,999 @@
+||1||的||de||possessive, adjectival suffix||nil||nil||++
+
+||2||是||shì||yes, right; to be||nil||nil||++
+
+||3||不||bù||no, not; un-; negative prefix||nil||nil||++
+
+||4||我||wǒ||our, us, i, me, my, we||nil||nil||++
+
+||5||一||yī||one; a, an; alone||nil||nil||++
+
+||6||有||yǒu||have, own, possess; exist||nil||nil||++
+
+||7||大||dà||big, great, vast, large, high||nil||nil||++
+
+||8||在||zài||be at, in, on; consist in, rest||nil||nil||++
+
+||9||人||rén||man; people; mankind; someone else||nil||nil||++
+
+||10||了||liǎo; le||particle of completed action||nil||nil||++
+
+||11||中||zhōng||central; hit (target); attain||nil||nil||++
+
+||12||到||dào||go to, arrive, been to||nil||nil||++
+
+||13||资||zī||property; wealth; capital||资料||zī liào (data)||++
+
+||14||要||yào||necessary, essential; necessity||nil||nil||++
+
+||15||可||kě||may, can, -able; possibly||nil||nil||++
+
+||16||以||yǐ||therefore; in order to||以前||yǐqián (before)||++
+
+||17||这||zhè||this, the, here||nil||nil||++
+
+||18||个||gè||numerary adjunct, piece; single||nil||nil||++
+
+||19||你||nǐ||you, second person pronoun||nil||nil||++
+
+||20||会||huì||will; a meeting||nil||nil||++
+
+||21||好||hǎo||good, okay; well||nil||nil||++
+
+||22||为||wèi||do, handle, govern, act; be||nil||nil||++
+
+||23||上||shàng||top; highest; go up||nil||nil||++
+
+||24||来||lái||come, coming; return, returning||nil||nil||++
+
+||25||就||jiù||just, simply; to come, near||nil||nil||++
+
+||26||学||xué||learning, knowledge; school||nil||nil||++
+
+||27||交||jiāo||mix; communicate; deliver||交流||jiāoliú (communicate with)||++
+
+||28||也||yě||also; classical final particle of strong affirmation or identity||nil||nil||++
+
+||29||用||yòng||use||nil||nil||++
+
+||30||能||néng||to be able; permitted to; ability||nil||nil||++
+
+||31||如||rú||if, supposing; as if; like, as||如果||rúguǒ (in case)||++
+
+||32||文||wén||literature, culture, writing||文化||wénhuà (culture)||++
+
+||33||时||shí||time, season; era, age, period||nil||nil||++
+
+||34||没||méi||not, have not, none; to drown, sink||nil||nil||++
+
+||35||说||shuō||speak||nil||nil||++
+
+||36||他||tā||other, another; he, she, it||nil||nil||++
+
+||37||看||kàn||look, see; examine||nil||nil||++
+
+||38||提||tí||hold in hand; lift in hand||提供||tígōng (provide)||++
+
+||39||那||nà||that, that one, those||nil||nil||++
+
+||40||问||wèn||ask (about), inquire after||nil||nil||++
+
+||41||生||shēng||life, living, lifetime; birth||生产||shēngchǎn (produce)||++
+
+||42||过||guò||pass, pass through, go across||nil||nil||++
+
+||43||下||xià||under; down; inferior; bring down||nil||nil||++
+
+||44||请||qǐng||ask; invite; please||nil||nil||++
+
+||45||天||tiān||sky, heaven; god, celestial||nil||nil||++
+
+||46||们||men||adjunct pronoun indicate plural||nil||nil||++
+
+||47||所||suǒ||place, location; numerary adjunct||所以||suǒyǐ (and so)||++
+
+||48||多||duō||much; more than||nil||nil||++
+
+||49||么||mó||what?(dimi.)||怎么||zěnme (how)||++
+
+||50||小||xiǎo||small, insignificant||nil||nil||++
+
+||51||想||xiǎng||think, plan, consider||nil||nil||++
+
+||52||得||dé||obtain, gain||nil||nil||++
+
+||53||之||zhī||pronoun(it, him, her); auxiliary verb||之前||zhīqián (prior to)||++
+
+||54||还||hái||still, yet, also, besides||还有||and also||++
+
+||55||电||diàn||electricity, electric; lightning||nil||nil||++
+
+||56||出||chū||go out, send out; stand; produce||nil||nil||++
+
+||57||工||gōng||labor, work;||nil||nil||++
+
+||58||对||duì||correct, right; facing, opposed||对比||duìbǐ (compared)||++
+
+||59||都||dōu; dū|| all; capital, metropolis||都市||dūshì (city)||++
+
+||60||机||jī||machine; moment, chance||机会||opportunity||++
+
+||61||自||zì||self, private, personal; from||自然||zìrán (natural）||++
+
+||62||后||hòu||behind, rear, after; descendents||nil||nil||++
+
+||63||子||zǐ||child, auxiliary verb||nil||nil||++
+
+||64||而||ér||and; and then; and yet; but||而且||érqiě (and)||++
+
+||65||讯||xùn||inquire; ask; examine; reproach||通讯||tōngxùn (communication)||++
+
+||66||站||zhàn||stand up; a stand, station||nil||nil||++
+
+||67||去||qù||go away, leave, depart||nil||nil||++
+
+||68||心||xīn||heart; mind, intelligence; soul||nil||nil||++
+
+||69||只||zhī||single, one of pair, lone||nil||nil||++
+
+||70||家||jiā||house, home; family||nil||nil||++
+
+||71||知||zhī||know, perceive||知道||zhīdào (know)||++
+
+||72||国||guó||nation, country||nil||nil||++
+
+||73||台||tái||station||台湾||Taiwan||++
+
+||74||很||hěn||very, quite, much||nil||nil||++
+
+||75||信||xìn||trust, believe; letter||nil||nil||++
+
+||76||成||chéng||completed, fixed||成功||chénggōng (success)||++
+
+||77||章||zhāng||composition; chapter, section||文章||article||++
+
+||78||何||hé||what, why, where, which, how||如何||rúhé (how)||++
+
+||79||同||tòng||alley, lane||nil||tóngshí (simultaneously)||++
+
+||80||道||dào||path, road, street; method, way||知道||nil||++
+
+||81||地||dì||earth; soil, ground; region||nil||nil||++
+
+||82||发||fǎ||hair||发现||fāxiàn (find)||++
+
+||83||法||fǎ||law, rule; French||nil||nil||++
+
+||84||无||wú||adv. no, nothing||无聊||wúliáo (bored)||++
+
+||85||然||rán||yes, certainly; pledge, promise||当然||dāngrán (of course)||++
+
+||86||但||dàn||only; but, however, yet, still||但是||but||++
+
+||87||吗||ma||final interrogative particle||好吗？||nil||++
+
+||88||当||dāng||bear, accept, undertake; just||当前||dāngqián (currently)||++
+
+||89||于||yú||in, at, on; interjection alas!||由于||yóuyú (due to)||++
+
+||90||本||běn||root, origin, source; basis||本来||běnlái (originally)||++
+
+||91||现||xiàn||appear, manifest||现在||right now||++
+
+||92||年||nián||year||nil||nil||++
+
+||93||前||qián||in front, forward; preceding||nil||nil||++
+
+||94||真||zhēn||real, actual, true, genuine||nil||nil||++
+
+||95||最||zuì||most, extremely, exceedingly||nil||nil||++
+
+||96||和||hé||and, harmony, peace||和谐||héxié (harmonious)||++
+
+||97||新||xīn||new, recent, fresh, modern||nil||nil||++
+
+||98||因||yīn||cause, reason; by; because (of)||因为||because||++
+
+||99||果||guǒ||fruit; result||结果||jiéguǒ (result)||++
+
+||100||定||dìng||decide, settle, fix||确定||quèdìng (determine)||++
+
+||101||意||yì||thought, idea, opinion; think||意见||yìjiàn (opinion)||++
+
+||102||情||qíng||feeling, sentiment, emotion||情况||qíngkuàng (situation)||++
+
+||103||点||diǎn||dot, speck, spot; point, degree||nil||nil||++
+
+||104||题||tí||forehead; title, headline; theme||题目||tímù (topic)||++
+
+||105||其||qí||his, her, its, their; that||其他||other||++
+
+||106||事||shì||affair, matter; to serve; accident,||nil||nil||++
+
+||107||方||fāng||a square, rectangle; a region; local||方便||fāngbiàn (convenient)||++
+
+||108||清||qīng||clear, pure, clean; peaceful||nil||nil||++
+
+||109||科||kē||section, department, science||科技||kējì (science and technology)||++
+
+||110||样||yàng||shape, form, pattern, style||nil||nil||++
+
+||111||些||xiē||little, few; rather, somewhat||nil||nil||++
+
+||112||吧||ba||emphatic final particle||吃吧||Let's eat||++
+
+||113||参||cān||take part in, intervene; ginseng||参加||cānjiā (participate)||++
+
+||114||此||cǐ||this, these; in this case, then||nil||nil||++
+
+||115||位||wèi||throne; position, post; rank, status; seat||位置||wèizhì (position)||++
+
+||116||理||lǐ||reason, logic; manage||理解||lǐjiě (understanding)||++
+
+||117||行||xíng||go; walk; move, travel; circulate||行为||xíngwéi (behavior)||++
+
+||118||作||zuò||make; work; compose, write; act, perform||nil||nil||++
+
+||119||经||jīng||classic works; pass through||经验||jīngyàn (experience)||++
+
+||120||者||zhě||that which; he who; those who||作者||author||++
+
+||121||什||shén||even, assorted||什么||what||++
+
+||122||谢||xiè||thank; decline||nil||nil||++
+
+||123||名||míng||name, rank, title, position||名片||míngpiàn (business card)||++
+
+||124||日||rì||sun; day; daytime||nil||nil||++
+
+||125||正||zhèng||right, proper, correct||正常||zhèngcháng (normal)||++
+
+||126||华||huá||flowery; illustrious; Chinese||华丽||huálì (gorgeous)||++
+
+||127||话||huà||speech, talk, language; dialect||nil||nil||++
+
+||128||开||kāi||open; initiate, begin, start||nil||nil||++
+
+||129||实||shí||real, true, solid, honest||实现||achieve||++
+
+||130||再||zài||again, twice, re-||nil||nil||++
+
+||131||城||chéng||castle; city, town; municipality||nil||nil||++
+
+||132||爱||ài||love, be fond of, like||nil||nil||++
+
+||133||与||yǔ||and; with; to; for; give, grant||参与||participate||++
+
+||134||二||èr||two; twice||nil||nil||++
+
+||135||动||dòng||move, happen; movement, action||nil||nil||++
+
+||136||比||bǐ||to compare, liken; comparison; than||nil||nil||++
+
+||137||高||gāo||high, tall; lofty, elevated||nil||nil||++
+
+||138||面||miàn||flour, dough, noodles||nil||nil||++
+
+||139||又||yòu||and, also, again, in addition||nil||nil||++
+
+||140||车||chē||cart, vehicle; carry in cart||nil||nil||++
+
+||141||力||lì||power, capability, influence||nil||nil||++
+
+||142||或||huò||or, either, else; perhaps, maybe||或者||or||++
+
+||143||种||zhǒng||seed; race; offspring; to plant||种类||zhǒnglèi (species)||++
+
+||144||像||xiàng||a picture, image, figure; to resemble||头像||head portrait||++
+
+||145||应||yìng||should, ought to, must||应该||yīnggāi||++
+
+||146||女||nǚ||woman, girl; feminine; rad. 38||nil||nil||++
+
+||147||教||jiào||teach, class||教授||jiàoshòu||++
+
+||148||分||fēn||divide; small unit of time etc.||nil||nil||++
+
+||149||手||shǒu||hand||nil||nil||++
+
+||150||打||dǎ||strike, hit, beat; fight; attack||nil||nil||++
+
+||151||已||yǐ||already; finished; stop||已经||already||++
+
+||152||次||cì||order, sequence; next||nil||nil||++
+
+||153||长||cháng; zhǎng||long; length; excel in; leader||nil||nil||++
+
+||154||太||tài||very, too, much; big; extreme||nil||nil||++
+
+||155||明||míng||bright, light, brilliant; clear||明天||nil||++
+
+||156||己||jǐ||self, oneself; private;||自己||nil||++
+
+||157||路||lù||road, path, street; journey||nil||nil||++
+
+||158||起||qǐ||rise, stand up; go up; begin||nil||nil||++
+
+||159||相||xiāng||mutual, reciprocal, each other||相信||nil||++
+
+||160||主||zhǔ||master, chief owner; host; lord||主要||main, principle||++
+
+||161||关||guān||frontier pass; close; relation||关心||concern||++
+
+||162||凤||fèng||male phoenix; symbol of joy||凤凰||fènghuáng (phoenix)||++
+
+||163||间||jiān||interval, space; place, between||中间||nil||++
+
+||164||呢||ne; ní||interrogative or emphatic final; (Cant.) this||nil||nil||++
+
+||165||觉||jué||to wake up from sleep; conscious||觉得||to feel||++
+
+||166||该||gāi||should, ought to, need to||nil||nil||++
+
+||167||十||shí||ten;||nil||nil||++
+
+||168||外||wài||out, outside, external; foreign||nil||nil||++
+
+||169||凰||huáng||female phoenix||凤凰||nil||++
+
+||170||友||yǒu||friend, companion; fraternity||友善||yǒushàn (friendly)||++
+
+||171||才||cái||talent, ability; just, only||才能||ability||++
+
+||172||民||mín||people, subjects, citizens||民主||democracy||++
+
+||173||系||xì||attach, connect, unite, fasten||联系||liánxì (contact)||++
+
+||174||进||jìn||advance, make progress, enter||nil||nil||++
+
+||175||使||shǐ||cause, send on a mission, order; envoy||使用||use||++
+
+||176||她||tā||she, her||nil||nil||++
+
+||177||着||zhe; zhāo; zhuó||with; the; touch||着急||zhāojí (anxious)||++
+
+||178||各||gè||each, individually, every, all||nil||nil||++
+
+||179||少||shǎo||few, less, inadequate||nil||nil||++
+
+||180||全||quán||maintain, keep whole or intact||nil||nil||++
+
+||181||两||liǎng||two, both, pair, couple; ounce||nil||nil||++
+
+||182||回||huí||return, turn around; a time||nil||nil||++
+
+||183||加||jiā||add to, increase, augment||nil||nil||++
+
+||184||将||jiāng||will, going to, future; general||将近||jiāngjìn (nearly, almost)||++
+
+||185||感||gǎn||feel, perceive, emotion||感谢||to thank, appreciate||++
+
+||186||第||dì||sequence, number; grade, degree||nil||nil||++
+
+||187||性||xìng||nature, character, sex||性格||xìnggé (character)||++
+
+||188||球||qiú||ball, sphere, globe; round||nil||nil||++
+
+||189||式||shì||style, system, formula, rule||方式||the way||++
+
+||190||把||bǎ||hold, take; guard; regard as||把手||handle, knob||++
+
+||191||被||bèi||passive indicator 'by'; bedding||被动||passive||++
+
+||192||老||lǎo||old, aged; experienced||nil||nil||++
+
+||193||公||gōng||fair, equitable; public; duke||nil||nil||++
+
+||194||龙||lóng||dragon; symbolic of emperor||龙虾||lóngxiā (lobster)||++
+
+||195||程||chéng||journey, trip; schedule, agenda||程度||degree, level||++
+
+||196||论||lùn||debate; discuss; discourse||结论||jiélùn (conclusion)||++
+
+||197||及||jí||extend; reach; come up to; and||及时||timely||++
+
+||198||别||bié||separate, other; do not||nil||nil||++
+
+||199||给||gěi||give; by, for||nil||nil||++
+
+||200||听||tīng||hear, listen; understand; obey||nil||nil||++
+
+||201||水||shuǐ||water, liquid, lot5on, juice||nil||nil||++
+
+||202||重||zhòng||heavy, weighty; double||nil||nil||++
+
+||203||体||tǐ||body; group, class, body, unit||体现||reflect||++
+
+||204||做||zuò||work, make; act||nil||nil||++
+
+||205||校||xiào||school; military field officer||nil||nil||++
+
+||206||里||lǐ||inside, interior, within||nil||nil||++
+
+||207||常||cháng||common, normal, frequent, regular||非常||fēicháng (very much)||++
+
+||208||东||dōng||east, eastern, eastward||nil||nil||++
+
+||209||风||fēng||wind; air; manners, atmosphere||nil||nil||++
+
+||210||您||nín||honorific for 'you'||nil||nil||++
+
+||211||湾||wān||a bay, cove, inlet, bend of stream||台湾||nil||++
+
+||212||啦||la||final particle of assertion||nil||nil||++
+
+||213||见||jiàn||see, observe, behold; perceive||意见||opinion||++
+
+||214||解||jiě||loosen, unfasten, untie; explain||解释||jiěshì (explanation, to resolve)||++
+
+||215||等||děng||rank, grade; wait; equal; 'etc.'||nil||nil||++
+
+||216||部||bù||part, division, section||部分||nil||++
+
+||217||原||yuán||source, origin, beginning||原因||reason||++
+
+||218||月||yuè||moon; month; KangXi radical 74||nil||nil||++
+
+||219||美||měi||beautiful, pretty; pleasing||nil||nil||++
+
+||220||先||xiān||first, former, previous||先进||advanced||++
+
+||221||管||guǎn||pipe, tube, duct; woodwind music||管理||management||++
+
+||222||区||qū||area, district, region, ward; surname||区别||difference||++
+
+||223||错||cuò||error, blunder, mistake, wrong||nil||nil||++
+
+||224||音||yīn||sound, tone, pitch, pronunciation||发音||pronunciation||++
+
+||225||否||fǒu||not, no, negative; final particle||否则||fǒuzé (otherwise)||++
+
+||226||啊||a||exclamatory particle||nil||nil||++
+
+||227||找||zhǎo||search, seek, look for; find||nil||nil||++
+
+||228||网||wǎng||net, web; network||nil||nil||++
+
+||229||乐||yuè||happy, glad; enjoyable; music||音乐||nil||++
+
+||230||让||ràng||allow, permit, yield, concede||nil||nil||++
+
+||231||通||tōng||pass through, common, communicate||通知||notice||++
+
+||232||入||rù||enter, come in(to), join||入口||entrance||++
+
+||233||期||qí||period of time; date; time limit||期待||qídài (look forward to)||++
+
+||234||选||xuǎn||choose, select; elect; election||nil||nil||++
+
+||235||较||jiào||compare; comparatively, more||比较||compare; rather||++
+
+||236||四||sì||four||nil||nil||++
+
+||237||场||cháng||open space, field, market||商场||shāngchǎng (mall)||++
+
+||238||由||yóu||cause, reason; from||由于||due to||++
+
+||239||书||shū||book, letter, document; writings||nil||nil||++
+
+||240||它||tā||it; other||nil||nil||++
+
+||241||快||kuài||rapid, quick, speedy, fast; soon||nil||nil||++
+
+||242||从||cóng||from, by, since, whence, through||nil||nil||++
+
+||243||欢||huān||happy, pleased, glad; joy; to enjoy||欢迎||huānyíng (welcome)||++
+
+||244||数||shù||number; several; count; fate||参数||parameter||++
+
+||245||表||biǎo||a watch, clock||nil||nil||++
+
+||246||怎||zěn||what? why? how?||nil||nil||++
+
+||247||至||zhì||reach, arrive; extremely, very||至少||at least||++
+
+||248||立||lì||stand; let stand; establish, set||立刻||lìkè(immediately)||++
+
+||249||内||nèi||inside, interior; domestic||内部||internal||++
+
+||250||合||hé||combine, unite, join; gather||合作||cooperation||++
+
+||251||目||mù||eye; look, see; division, topic||目前||currently||++
+
+||252||望||wàng||to look at, look forward; to hope, expect||失望||shīwàng (disappointed)||++
+
+||253||认||rèn||recognize, know, understand||认为||think||++
+
+||254||几||jǐ||how many? how much?; a few, some||nil||nil||++
+
+||255||社||shè||society, club||社会||society||++
+
+||256||告||gào||tell, announce, inform; accuse||告诉||gàosù (to tell)||++
+
+||257||更||gèng||more, still further, much more||nil||nil||++
+
+||258||版||bǎn||printing blocks; edition||版本||version||++
+
+||259||度||dù||degree, system; manner; to consider||nil||nil||++
+
+||260||考||kǎo||examine, test; investigate||nil||nil||++
+
+||261||喜||xǐ||like, love, enjoy; joyful thing||喜欢||nil||++
+
+||262||头||tóu||head; top; chief, first; boss||nil||nil||++
+
+||263||难||nán||difficult, arduous, hard; unable||nil||nil||++
+
+||264||光||guāng||light, brilliant, shine; only||nil||nil||++
+
+||265||买||mǎi||buy, purchase; bribe, persuade||nil||nil||++
+
+||266||今||jīn||now, today, modern era||今年||nil||++
+
+||267||身||shēn||body; trunk, hull; rad. no. 158||身高||height||++
+
+||268||许||xǔ||allow, permit; promise; betroth||也许||maybe||++
+
+||269||弟||dì||young brother; junior; i, me||nil||nil||++
+
+||270||若||ruò||if, supposing, assuming; similar||若是||if||++
+
+||271||算||suàn||count, calculate, figure; plan||nil||nil||++
+
+||272||记||jì||record; keep in mind, remember||nil||nil||++
+
+||273||代||dài||generation, era; substitute||代表||dàibiǎo (representative)||++
+
+||274||统||tǒng||series; together; to unite||统计||tǒngjì (statistics)||++
+
+||275||处||chù||place, locale; department||处理||to deal with||++
+
+||276||完||wán||complete, finish, settle; whole||完成||to complete||++
+
+||277||号||hào||mark, sign; symbol; number||nil||nil||++
+
+||278||接||jiē||receive; continue; catch; connect||接受||jiēshòu (to accept)||++
+
+||279||言||yán||words, speech; speak, say||留言||liúyán (leave a message)||++
+
+||280||政||zhèng||government, political affairs||政治||zhèngzhì(political)||++
+
+||281||玩||wán||play with, joke, enjoy||nil||nil||++
+
+||282||师||shī||teacher, master, specialist; multitude, troops||老师||nil||++
+
+||283||字||zì||letter, character, word||nil||nil||++
+
+||284||并||bìng||combine, annex||合并||hébìng (merge)||++
+
+||285||男||nán||male, man; son;||nil||nil||++
+
+||286||计||jì||meter, plan; to count, reckon||设计||shèjì (design)||++
+
+||287||谁||shuí||who? whom? whose? anyone?||nil||nil||++
+
+||288||山||shān||mountain, hill, peak||nil||nil||++
+
+||289||张||zhāng||to stretch, spread, look||紧张||jǐnzhāng (tension, nervous)||++
+
+||290||党||dǎng||political party, gang, faction||党员||nil||++
+
+||291||每||měi||every, each||nil||nil||++
+
+||292||且||qiě||further||而且||nil||++
+
+||293||结||jié||knot, tie; join, connect||结果||result||++
+
+||294||改||gǎi||change, alter; improve, remodel||改善||gǎishàn (improve)||++
+
+||295||非||fēi||not, negative, non-; oppose||非常||nil||++
+
+||296||星||xīng||star, satellite, particle||星期六||nil||++
+
+||297||连||lián||join, connect; continuous; even||连接||connection||++
+
+||298||哈||hā||sound of laughter||nil||nil||++
+
+||299||建||jiàn||build, establish, erect, found||建议||jiànyì (suggest)||++
+
+||300||放||fàng||put, release, free, liberate||放心||rest assured||++
+
+||301||直||zhí||straight, erect, vertical||nil||nil||++
+
+||302||转||zhuǎn||to turn, transfer||nil||nil||++
+
+||303||报||bào||report, newspaper||报告||report||++
+
+||304||活||huó||to live; alive; to work; ||活动||nil||++
+
+||305||设||shè||to set up, arrange; suppose, if||假设||jiǎshè||++
+
+||306||变||biàn||change, transform, alter; rebel||nil||nil||++
+
+||307||指||zhǐ||finger, toe; point, indicate||指示||zhǐshì (instructions)||++
+
+||308||气||qì||air, gas, steam; spirit||nil||nil||++
+
+||309||研||yán||grind, rub; study, research||研究||yánjiū (research)||++
+
+||310||陈||chén||old, stale; to exhibit, narrate||陈述||chénshù (statement)||++
+
+||311||试||shì||test, try, experiment||nil||nil||++
+
+||312||西||xī||west(ern); westward, occident||nil||nil||++
+
+||313||五||wǔ||five; surname||nil||nil||++
+
+||314||希||xī||rare; hope, expect, strive for||希望||to hope||++
+
+||315||取||qū||take, receive, obtain; select||取消||qǔxiāo (cancel)||++
+
+||316||神||shén||spirit, god, supernatural being||神秘||shénmì (mysterious)||++
+
+||317||化||huà||to turn, melt, transform; -ify||变化||biànhuà (change)||++
+
+||318||物||wù||thing, substance, creature||生物||shēngwù (biological; organism)||++
+
+||319||王||wáng||king, ruler; royal; surname||nil||nil||++
+
+||320||战||zhàn||war, fighting, battle||挑战||tiǎozhàn (challenge)||++
+
+||321||近||jìn||near, close; approach; intimate||nil||nil||++
+
+||322||世||shì||generation; world; era||nil||nil||++
+
+||323||受||shòu||receive, accept, get; bear, stand||世界||shìjiè (world)||++
+
+||324||义||yì||right conduct, righteousness||义务||yìwù (obligation)||++
+
+||325||反||fǎn||reverse, opposite, contrary, anti||反映||fǎnyìng (to reflect; response)||++
+
+||326||单||dān||single, individual, only; lone||nil||nil||++
+
+||327||死||sǐ||die; dead; death||nil||nil||++
+
+||328||任||rèn||trust to, rely on, appoint; to bear, duty, office; allow||任务||rènwù (task, undertaking)||++
+
+||329||跟||gēn||heel; to follow, accompany; with||nil||nil||++
+
+||330||便||biàn||convenience, ease; expedient||nil||nil||++
+
+||331||空||kōng||empty, hollow, bare, deserted||nil||nil||++
+
+||332||林||lín||forest, grove; surname||nil||nil||++
+
+||333||士||shì||scholar, gentleman; soldier||士兵||shìbīng (soldier)||++
+
+||334||照||zhào||to photograph, shine, reflect||照片||photo||++
+
+||335||却||què||still, but; decline; retreat||却是||but it is||++
+
+||336||北||běi||north; northern; northward||nil||nil||++
+
+||337||队||duì||team, group; army unit||队长||team leader||++
+
+||338||功||gōng||achievement, merit, good result||功能||features||++
+
+||339||必||bì||surely, most certainly; must||必须||bìxū (have to)||++
+
+||340||声||shēng||sound, voice, noise; tone; music||声音||nil||++
+
+||341||写||xiě||write; draw, sketch; compose||nil||nil||++
+
+||342||平||píng||flat, level, even; peaceful||平台||platform||++
+
+||343||影||yǐng||shadow; image, reflection; photograph||影响||yǐngxiǎng(influences)||++
+
+||344||业||yè||profession, business, trade||业务||yèwù(business)||++
+
+||345||金||jīn||gold; metals in general; money||金融||jīnróng(financial)||++
+
+||346||档||dǎng||shelf; frame, crosspiece||文档||documentation||++
+
+||347||片||piàn||slice, splinter, strip; rad. 91||图片||túpiàn (image)||++
+
+||348||讨||tǎo||to discuss; ask for, beg; demand; marry||讨厌||tǎoyàn (to hate; nasty; troublesome)||++
+
+||349||色||sè||color, tint, hue, shade; form, body; beauty, desire for beauty||nil||nil||++
+
+||350||容||róng||looks, appearance; figure, form||内容||contents, substance||++
+
+||351||央||yāng||center, conclude, run out; beg||中央||central||++
+
+||352||妳||nǎi||you (f.)||妳好漂亮||You are so pretty||++
+
+||353||向||xiàng||once upon time; period of time||方向||direction||++
+
+||354||市||shì||market, fair; city, town; trade||城市||city||++
+
+||355||则||zé||rule, law, regulation; grades||否则||fǒuzé (otherwise)||++
+
+||356||员||yuán||member; personnel, staff member||nil||nil||++
+
+||357||兴||xīng||thrive, prosper, flourish||员工||employee||++
+
+||358||利||lì||gains, advantage, profit, merit||利用||to utilize||++
+
+||359||强||qiáng||strong, powerful, energetic||nil||nil||++
+
+||360||白||bái||white; pure, unblemished; bright||nil||nil||++
+
+||361||价||jià||price, value||评价||píngjià (evaluation)||++
+
+||362||安||ān||peaceful, tranquil, quiet||安排||ānpái (arrangements; to set up)||++
+
+||363||呵||hē||to cry, exclaim, shout||呵呵||ha ha||++
+
+||364||特||tè||special, unique, distinguished||特点||feature, characteristic||++
+
+||365||思||sī||think, consider, ponder; final particle||思想||thought, idea||++
+
+||366||叫||jiào||cry, shout; hail, greet, call||nil||nil||++
+
+||367||总||zǒng||collect; overall, altogether||总结||summary; to sum up||++
+
+||368||办||bàn||manage, do, handle; deal with||办公室||office||++
+
+||369||保||bǎo||protect, safeguard, defend, care||保证||bǎozhèng (guarantee)||++
+
+||370||花||huā||flower; blossoms||nil||nil||++
+
+||371||议||yì||consult, talk over, discuss||建议||to recommend||++
+
+||372||传||chuán||summon; propagate, transmit||宣传||xuānchuán (publicity)||++
+
+||373||元||yuán||first; dollar; origin; head||欧元||ōuyuán (euro)||++
+
+||374||求||qiú||to request, beg, beseech||要求||request; demand||++
+
+||375||份||fèn||portion, part; duty||月份||month||++
+
+||376||件||jiàn||item; clothes||软件||ruǎnjiàn (software)||++
+
+||377||持||chí||sustain, support; hold, grasp||坚持||jiānchí (adhere to, insist on)||++
+
+||378||万||wàn||ten thousand; innumerable||百万||million||++
+
+||379||未||wèi||not yet; have not||未来||future||++
+
+||380||究||jiù||examine, investigate||研究||research||++
+
+||381||决||jué||decide, determine, judge||决定||decision||++
+
+||382||投||tóu||throw, cast, fling, pitch; jump||投资||investment||++
+
+||383||哪||nǎ||which? where? how?||nil||nil||++
+
+||384||喔||wō||Oh! (interjection)||nil||nil||++
+
+||385||笑||xiào||smile, laugh, giggle; snicker||nil||nil||++
+
+||386||猫||māo||cat||nil||nil||++
+
+||387||组||zǔ||class; section, department||组织||zǔzhī (organization)||++
+
+||388||独||dú||alone, single, solitary, only||独立||independent||++
+
+||389||级||jí||level, rank, class; grade||nil||nil||++
+
+||390||走||zǒu||walk, go on foot; run; leave||nil||nil||++
+
+||391||支||zhī||disperse, pay; support; branch||支持||to support, stand by||++
+
+||392||曾||céng||already; sign of past||曾经||once, already||++
+
+||393||标||biāo||a mark, symbol, label, sign; standard||目标||aims||++
+
+||394||流||liú||flow, circulate, drift; class||nil||nil||++
+
+||395||竹||zhú||bamboo;||爆竹||bàozhú (firecrackers)||++
+
+||396||兄||xiōng||elder brother||兄弟||brothers||++
+
+||397||阿||ā||ah! (interjection)||nil||āyí (aunt)||++
+
+||398||室||shì||room, home, house, chamber||会议室||meeting room||++
+
+||399||卡||qiǎ||card; to clip, fasten||信用卡||credit card||++
+
+||400||马||mǎ||horse; surname;||nil||nil||++
+
+||401||共||gòng||common, general; altogether; to share||共同||common, join||++
+
+||402||需||xū||need, require, must||需求||demand||++
+
+||403||海||hǎi||sea, ocean; maritime||nil||nil||++
+
+||404||口||kǒu||mouth; open end; entrance, gate||nil||nil||++
+
+||405||门||mén||gate, door, entrance, opening||nil||nil||++
+
+||406||般||bān||sort, kind, way, manner||一般||general, common||++
+
+||407||线||xiàn||thread, line, wire; clue||曲线||qūxiàn (curve)||++
+
+||408||语||yǔ||language, words; saying, expression||语言||language||++
+
+||409||命||mìng||life; destiny, fate, luck; an order, instruction||命令||mìnglìng (command)||++
+
+||410||观||guān||see, observe, view; appearance||观点||view||++
+
+||411||视||shì||look at, inspect, observe, see||视频||shìpín (video)||++
+
+||412||朋||péng||friend, pal, acquaintance||朋友||nil||++
+
+||413||联||lián||connect, join; associate, ally||联系||nil||++
+
+||414||败||bài||defeat, lose, fail||失败||failure||++
+
+||415||格||gé||pattern, standard, form; style||格式||format||++
+
+||416||黄||huáng||yellow; surname||nil||nil||++
+
+||417||钱||qián||money, currency, coins||nil||nil||++
+
+||418||修||xiū||study; repair; cultivate||nil||nil||++
+
+||419||失||shī||lose; make mistake, neglect||失败||nil||++
+
+||420||儿||ér||son, child, oneself; final part||儿子||nil||++
+
+||421||住||zhù||reside, live at, dwell, lodge; stop||nil||nil||++
+
+||422||八||bā||eight; all around, all sides||nil||nil||++
+
+||423||脑||nǎo||brain||电脑||nil||++
+
+||424||板||bǎn||boss, the owner, person in charge||老板||nil||++
+
+||425||吃||chī||eat; drink; suffer, endure, bear||nil||nil||++
+
+||426||另||lìng||another, separate, other||另外||other, additional||++
+
+||427||换||huàn||change, exchange; substitute||nil||nil||++
+
+||428||即||jí||promptly, quickly, immediately||即使||even if||++
+
+||429||象||xiàng||elephant; ivory; figure, image||nil||nil||++
+
+||430||料||liào||consider, conjecture; materials, ingredients||资料||data||++
+
+||431||录||lù||copy||录音||recording||++
+
+||432||拿||ná||take, hold, grasp; bring; with||nil||nil||++
+
+||433||专||zhuān||monopolize, take sole possession||专业||profession||++
+
+||434||远||yuǎn||distant, remote, far; profound||nil||nil||++
+
+||435||速||sù||quick, prompt, speedy||速度||speed||++
+
+||436||基||jī||foundation, base||基础||jīchǔ (basis, foundation)||++
+
+||437||帮||bāng||to help, assist; to defend; shoe upper||nil||nil||++
+
+||438||形||xíng||form, shape, appearance||形成||form||++
+
+||439||确||què||sure, certain; real, true||确认||confirm||++
+
+||440||候||hòu||wait; expect; visit; greet||气候||climate, atmosphere||++
+
+||441||装||zhuāng||dress, clothes; decorate; fill||安装||installation, to install||++
+
+||442||孩||hái||baby, child; children||女孩||nil||++
+
+||443||备||bèi||prepare, ready, perfect||准备||zhǔnbèi (ready, prepare)||++
+
+||444||歌||gē||song, lyrics; sing, chant; praise||nil||nil||++
+
+||445||界||jiè||boundary, limit; domain; society; the world||世界||nil||++
+
+||446||除||chú||eliminate, remove, except||除了||except||++
+
+||447||南||nán||south; southern part; southward||nil||nil||++
+
+||448||器||qì||receptacle, vessel; instrument||机器||machine||++
+
+||449||画||huà||painting||nil||nil||++
+
+||450||诉||sù||accuse; sue; inform; narrate||告诉||to tell||++
+
+||451||差||chà; chāi||difference, error; poor; to differ, to lack||差不多||almost, nearly||++
+
+||452||讲||jiǎng||explain; discuss; talk||nil||nil||++
+
+||453||类||lèi||class, group, kind, category||分类||classification||++
+
+||454||英||yīng||Britain, flower, hero, brave||英语||nil||++
+
+||455||案||àn||case, proposal, law, desk||方案||proposal, scheme||++
+
+||456||带||dài||belt, girdle, band, strap, zone||带来||bring||++
+
+||457||久||jiǔ||long time (ago); time passage, grow late||nil||nil||++
+
+||458||乎||hū||interrogative particle||几乎||almost, nearly||++
+
+||459||掉||diào||to fall, drop||nil||nil||++
+
+||460||迷||mí||bewitch, charm, infatuate||迷茫||mímáng (confused, vast)||++
+
+||461||量||liàng||amount, quantity, measure||数量||quantity||++
+
+||462||引||yǐn||to pull, draw out, attract; to stretch||引起||to cause, lead to||++
+
+||463||整||zhěng||orderly, neat, tidy; whole||整理||nil||++
+
+||464||似||sì||resemble, similar to; as if, seem||似乎||seem||++
+
+||465||耶||yé||yay!||耶稣||yēsū (Jesus)||++
+
+||466||奇||qí||strange, unusual, uncanny, occult||奇怪||qíguài (strange)||++
+
+||467||制||zhì||make, manufacture; produce||制定||formulate, draw up||++
+
+||468||边||biān||edge, margin, side, border||旁边||pángbiān (next to)||++
+
+||469||型||xíng||pattern, model, type; law; mold||型号||model, type||++
+
+||470||超||chāo||jump over, leap over; surpass||超过||nil||++
+
+||471||识||shì||recognize, understand, know||识别||to distinguish, discern||++
+
+||472||虽||suī||although, even if||虽然||although, in spite of||++
+
+||473||怪||guài||strange, unusual, peculiar||怪物||monster, eccentric||++
+
+||474||飞||fēi||fly; go quickly; dart; high||nil||nil||++
+
+||475||始||shǐ||begin, start; then, only then||开始||nil||++
+
+||476||品||pǐn||article, product, commodity||产品||chǎnpǐn||++
+
+||477||运||yùn||luck, fortune; ship, transport||运动||nil||++
+
+||478||赛||sài||compete, contend; contest, race||比赛||game, competition||++
+
+||479||费||fèi||expenses, expenditures, fee||费用||cost||++
+
+||480||梦||mèng||dream; visionary; wishful||梦想||dreram||++
+
+||481||故||gù||ancient, old; reason, because||故事||nil||++
+
+||482||班||bān||class, group, grade; squad; job||下班||nil||++
+
+||483||权||quán||power, right, authority||授权||shòuquán (to authorize)||++
+
+||484||破||pò||break, ruin, destroy; rout||nil||nil||++
+
+||485||验||yàn||test, examine, inspect; verify||经验||nil||++
+
+||486||眼||yǎn||eye; eyelet, hole, opening||nil||nil||++
+
+||487||满||mǎn||fill; full, satisfied||nil||nil||++
+
+||488||念||niàn||think of, recall, study||想念||to miss, long for||++
+
+||489||造||zào||construct, build, make, begin; prepare||制造||to manufacture||++
+
+||490||军||jūn||army, military; soldiers, troops||冠军||guànjūn (champion)||++
+
+||491||精||jīng||refined, precise; essence||精神||spirit, mind, psyche||++
+
+||492||务||wù||affairs, business; must, should||务必||be sure, must||++
+
+||493||留||liú||stop, halt; stay, detain, keep||留言||liúyán||++
+
+||494||服||fú||clothes; wear, dress||服务||to serve; clothes, dress||++
+
+||495||六||liù||number six||nil||nil||++
+
+||496||图||tú||diagram; chart, map, picture||图片||image||++
+
+||497||收||shōu||gather together, collect; harvest||收到||to recieve||++
+
+||498||舍||shě||house, residence; to abandon, give up||宿舍||sùshè (dorm room)||++
+
+||499||半||bàn||half||半径||radius||++
+
+||500||读||dú||read, study; pronounce||nil||nil||++

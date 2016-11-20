@@ -47,9 +47,18 @@ extension Sequence {
 }
 
 extension Array {
+    
     func chooseRandom() -> Element {
         let index = Int(arc4random_uniform(UInt32(self.count-1)))
         return self[index]
+    }
+    
+    func split() -> [[Element]] {
+        let ct = self.count
+        let half = ct / 2
+        let leftSplit = self[0 ..< half]
+        let rightSplit = self[half ..< ct]
+        return [Array(leftSplit), Array(rightSplit)]
     }
 }
 
@@ -63,9 +72,24 @@ extension Array where Element: Equatable {
         }
         return unique
     }
+    
+    mutating func removeElement(item: Element) {
+        for x in self {
+            var i = 0
+            while i < self.count {
+                if x == item {
+                    self.remove(at: i)
+                } else {
+                    i += 1
+                }
+            }
+            
+        }
+    }
 }
 
 class Helper {
+    //let darkGrey, lightGrey, backgroundGrey: UIColor!
     let darkBrown, lightBrown: UIColor!
     let darkRed, lightRed: UIColor!
     let darkYellow, lightYellow: UIColor!

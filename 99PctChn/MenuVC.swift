@@ -18,9 +18,13 @@ class MenuVC: UIViewController {
     @IBOutlet weak var masteredBtn: UIButton!
     @IBOutlet weak var allCardsBtn: UIButton!
     
+//    var newVC: SelectMasteredVC! = nil
+    
     let context = delegate.persistentContainer.viewContext
     
-    var allCards = [Card]()
+    //var allCards = [Card]()
+    var completeDeck = Deck()
+    var backgroundDeck = Deck()
     var zeroDeck = Deck()
     var masteredDeck = Deck()
     var otherDecks = Deck()
@@ -29,10 +33,13 @@ class MenuVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        checkForFirstLaunch()
+        
     }
     
-    override func viewWillAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(false)
+//        newVC = self.storyboard?.instantiateViewController(withIdentifier: "SelectMasteredVC") as! SelectMasteredVC
+        checkForFirstLaunch()
         updateView()
     }
     
@@ -55,10 +62,10 @@ class MenuVC: UIViewController {
             vc.deck = otherDecks
         case "SettingsSegue":
             let vc = segue.destination as! SettingsVC
-            vc.allCards = allCards
+            vc.allCards = completeDeck.cards
         case "GreySegue":
             let vc = segue.destination as! AllCardsVC
-            vc.allCards = allCards
+            vc.allCards = completeDeck.cards
             vc.displayDeck = zeroDeck
         default:
             break
@@ -68,13 +75,18 @@ class MenuVC: UIViewController {
     //---Custom Functions---
     
     func setUpView(){
-        loadCardDataIntoDB(file: "1-100", rank: 0)
+        loadCardDataIntoDB(file: "1-500")
+        updateAllCards()
+        appendHundredNewCardsToZeroDeck(deck: completeDeck)
+
     }
     
     func updateAllCards() {
         let request: NSFetchRequest<Card> = Card.fetchRequest()
         do {
-            allCards = try context.fetch(request)
+            let cards = try context.fetch(request)
+            completeDeck.cards = cards
+            completeDeck.sortByRank()
         } catch {
             fatalError("Failed to fetch Cards: \(error)")
         }
@@ -88,15 +100,41 @@ class MenuVC: UIViewController {
         }
     }
     
+    func appendHundredNewCardsToZeroDeck(deck: Deck){
+        let cards = deck.cards
+        var i = 0
+        while i < 100 {
+            cards[i].deck = 0
+            zeroDeck.cards.append(cards[i])
+            print(zeroDeck.cards[i].rank)
+            i += 1
+        }
+        
+        //TO DO 
+        //when press done, closes the selectmasteredvc window
+        //double tap on the table view cell if want to select multiple
+        //double
+        zeroDeck.sortByRank()
+        let newVC = self.storyboard?.instantiateViewController(withIdentifier: "SelectMasteredVC") as! SelectMasteredVC
+        let split = zeroDeck.cards.split()
+        newVC.leftDeck.append(contentsOf: split[0])
+        newVC.rightDeck.append(contentsOf: split[1])
+        self.show(newVC, sender: nil)
+        //self.performSegue(withIdentifier: "SelectMasteredSegue", sender: nil)
+    }
+    
     func updateView(){
         
         updateAllCards()
         var zero = 0, one = 0, two = 0, three = 0, four = 0
-        for card in allCards {
+        for card in completeDeck.cards {
             switch(card.deck) {
+            case -1:
+                backgroundDeck.cards.append(card)
             case 0:
                 zero += 1
                 zeroDeck.cards.append(card)
+                zeroDeck.cards = zeroDeck.cards.removeDuplicates()
             case 1:
                 one += 1
                 otherDecks.cards.append(card)
@@ -114,8 +152,12 @@ class MenuVC: UIViewController {
             }
         }
         
+        if zeroDeck.cards.count == 0 {
+            appendHundredNewCardsToZeroDeck(deck: backgroundDeck)
+        }
+        
         zeroDeck.sortByRank()
-        self.allCardsBtn.setTitle("\(zero)/\(allCards.count)", for: .normal)
+        self.allCardsBtn.setTitle("\(zero)/\(completeDeck.cards.count)", for: .normal)
         self.one.text = "\(one)"
         self.two.text = "\(two)"
         self.three.text = "\(three)"
@@ -127,53 +169,25 @@ class MenuVC: UIViewController {
         
     }
     
-    func loadCardDataIntoDB(file: String, rank: Int) {
+    func loadCardDataIntoDB(file: String) {
         if let path = Bundle.main.path(forResource: file, ofType: "txt") {
-            let data: String!
             do {
-                data = try String(contentsOfFile: path, encoding: .utf8)
-                //EXPLANATION: Turn txt text into chinese, translation, pinyin, example, exampleTranslation arrays.
-                var parts = data.components(separatedBy: "\"")
-                //EXPLANATION: What this starts out looking like.
-//                for p in parts {
-//                 print("|| ", p, "||")
-//                 }
-                let max = (parts.count-1)
-                var translationArray = [String]()
-                var other = ""
-                var i = 0
-                while i <= max {
-                    other = other + parts[i]
-                    if i+1 >= max {
-                        break
-                    }
-                    translationArray.append(parts[i+1])
-                    i += 2
+                var newString = try String(contentsOfFile: path, encoding: .utf8)
+                newString = newString.replacingOccurrences(of: "\n\n", with: "")
+                newString = newString.replacingOccurrences(of: "\r", with: "")
+                var flashcard = newString.components(separatedBy: "++")
+                flashcard.removeLast()
+                var card: [(rank: Int, chinese: String, pinyin: String, translation: String, chn: String, eng: String)] = []
+                for c in flashcard {
+                    var array = c.components(separatedBy: "||")
+                    array.removeLast()
+                    array.removeFirst()
+                    card.append((rank: Int(array[0])!, chinese: array[1],
+                                 pinyin: array[2], translation: array[3],
+                                 chn: array[4], eng: array[5]))
                 }
-                parts = other.components(separatedBy: "\n,")
-                other = ""
-                for p in parts {
-                    other = other + p
-                }
-                parts = other.components(separatedBy: "\n")
-                var chineseArray = [String]()
-                var pinyinArray = [String]()
-                var exampleArray = [String]()
-                var exampleTranslationArray = [String]()
-                for p in parts {
-                    var unit = p.components(separatedBy: ",")
-                    chineseArray.append(unit[0])
-                    pinyinArray.append(unit[1])
-                    exampleArray.append(unit[2])
-                    exampleTranslationArray.append(unit[3])
-                }
-                i = rank
-                if translationArray.count != chineseArray.count {
-                    fatalError("translation count = \(translationArray.count); chinese count = \(chineseArray.count)")
-                }
-                for _ in chineseArray {
-                    let _ = Card(rank: i, chinese: chineseArray[i], pinyin: pinyinArray[i], translation: translationArray[i], example: exampleArray[i], exampleTranslation: exampleTranslationArray[i], context: context)
-                    i += 1
+                for c in card {
+                    let _ = Card(rank: c.rank, chinese: c.chinese, pinyin: c.pinyin, translation: c.translation, example: c.chn, exampleTranslation: c.eng, context: context)
                 }
                 delegate.saveContext()
             } catch {

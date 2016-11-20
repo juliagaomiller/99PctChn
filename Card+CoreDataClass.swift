@@ -33,7 +33,7 @@ public class Card: NSManagedObject {
         self.example = example
         self.exampleTranslation = exampleTranslation
         self.flipped = false
-        self.deck = 0
+        self.deck = -1
         self.lastReviewed = nil
         
     }
