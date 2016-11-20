@@ -13,11 +13,13 @@ class MasteredCell: UITableViewCell {
     @IBOutlet weak var rankLabel: UILabel!
     @IBOutlet weak var chnLabel: UILabel!
     
-    weak var delegate: CheckForDoubleTap?
+//    weak var delegate: CheckForDoubleTap?
     
-    let h = Helper()
+//    let h = Helper()
     var card: Card?
-    var double = false, single = false
+    var click = 0
+    
+//    var double = false, single = false
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -62,6 +64,13 @@ class MasteredCell: UITableViewCell {
 //        print(rankLabel.text!, chnLabel.text!)
 //    }
     
+    func updateClicks(){
+        if click == 2 {
+            click = 0
+        } else {
+            click += 1
+        }
+    }
     
     func configureCell(card: Card){
         self.card = card

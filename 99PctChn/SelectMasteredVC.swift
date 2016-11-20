@@ -24,6 +24,8 @@ class SelectMasteredVC: UIViewController {
     var leftDeck = [Card]()
     var rightDeck = [Card]()
     
+    let h = Helper()
+    
     static var allCells = [MasteredCell]()
     
     var masteredDeck = Deck()
@@ -61,7 +63,7 @@ class SelectMasteredVC: UIViewController {
 //        var cell = MasteredCell()
 //        let location: CGPoint = gestureRecognizer.location(in: self.customView)
 //        if let indexPath = self.leftTableView.indexPathForRow(at: location){
-//            cell = self.leftTableView.cellForRow(at: indexPath) as! MasteredCell!
+//            cell = self.leftTalbleView.cellForRow(at: indexPath) as! MasteredCell!
 //        } else if let indexPath = self.rightTableView.indexPathForRow(at: location){
 //            cell = self.rightTableView.cellForRow(at: indexPath) as! MasteredCell!
 //        } else { print("Did not tap on table") }
@@ -111,13 +113,24 @@ extension SelectMasteredVC: UITableViewDelegate, UITableViewDataSource {
         let card = deck[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as! MasteredCell
         cell.configureCell(card: card)
-        cell.delegate = self
+//        cell.delegate = self
         SelectMasteredVC.allCells.append(cell)
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        let cell = tableView.cellForRow(at: indexPath) as! MasteredCell
+        cell.updateClicks()
+        switch(cell.click){
+        case 0:
+            cell.backgroundColor = UIColor.clear
+        case 1:
+            cell.backgroundColor = h.lightBlue
+        case 2:
+            cell.backgroundColor = UIColor.blue
+        default:
+            fatalError()
+        }
     }
 }
 
